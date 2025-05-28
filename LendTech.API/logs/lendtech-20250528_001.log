@@ -1,27 +1,26 @@
-2025-05-28 19:16:38.094 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
-2025-05-28 19:16:38.701 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.703 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.704 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.705 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.706 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.908 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
-2025-05-28 19:16:39.244 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
-2025-05-28 19:16:39.274 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-ZqtVI5xFKzV8V0-KtwoSHA ثبت شد
-2025-05-28 19:16:39.276 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-MyOMyuyJNIWhflrNAb9WeA ثبت شد
-2025-05-28 19:16:39.278 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-HzPRltDsK4za1kMcnIsGBQ ثبت شد
-2025-05-28 19:16:39.279 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
-2025-05-28 19:16:39.280 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
-2025-05-28 19:16:39.316 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * 
-2025-05-28 19:16:39.329 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
-2025-05-28 19:16:39.457 +03:30 [INF] Initializing UI Database
-2025-05-28 19:16:39.552 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
-2025-05-28 19:16:39.560 +03:30 [ERR] Failed executing DbCommand (100ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+2025-05-28 19:45:22.824 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 19:45:23.137 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.139 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.142 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.144 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.145 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.262 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 19:45:23.521 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 19:45:23.529 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-JxWHbTQEk2o4NOG2pVBjMQ ثبت شد
+2025-05-28 19:45:23.557 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-JMgo9nWzleptRpUX8KQwMQ ثبت شد
+2025-05-28 19:45:23.560 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-aamqYu0lL8yQqCAvszoOEw ثبت شد
+2025-05-28 19:45:23.561 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 19:45:23.562 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 19:45:23.599 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 19:45:23.603 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 19:45:23.632 +03:30 [INF] Initializing UI Database
+2025-05-28 19:45:23.671 +03:30 [ERR] Failed executing DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
 SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
 FROM [OutboxEvents] AS [o]
 WHERE [o].[ProcessedAt] IS NULL
 ORDER BY [o].[CreatedAt]
-2025-05-28 19:16:39.561 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
-2025-05-28 19:16:39.571 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
+2025-05-28 19:45:23.672 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
+2025-05-28 19:45:23.679 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
 Invalid column name 'ModifiedBy'.
@@ -37,7 +36,7 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
@@ -54,94 +53,11 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
-2025-05-28 19:16:39.762 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
-2025-05-28 19:16:39.757 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
-Error Number:207,State:1,Class:16
-2025-05-28 19:16:39.785 +03:30 [INF] Saving healthchecks configuration to database
-2025-05-28 19:16:41.341 +03:30 [INF] HTTP GET /health responded 200 in 1011.7401 ms
-2025-05-28 19:17:14.906 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:17:15.778 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
-2025-05-28 19:17:16.121 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:17:16.124 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:17:16.126 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:17:16.127 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:17:16.128 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:17:16.251 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
-2025-05-28 19:17:16.492 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
-2025-05-28 19:17:16.501 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-00ebymsNeetmiRprCcW0Cg ثبت شد
-2025-05-28 19:17:16.503 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-tKa1APYhVGxOi-4U4N_E0w ثبت شد
-2025-05-28 19:17:16.507 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-f1JGHynjExZ6zsJalNkVpQ ثبت شد
-2025-05-28 19:17:16.508 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
-2025-05-28 19:17:16.509 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
-2025-05-28 19:17:16.546 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
-2025-05-28 19:17:16.549 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
-2025-05-28 19:17:16.580 +03:30 [INF] Initializing UI Database
-2025-05-28 19:17:16.635 +03:30 [ERR] Failed executing DbCommand (69ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
-FROM [OutboxEvents] AS [o]
-WHERE [o].[ProcessedAt] IS NULL
-ORDER BY [o].[CreatedAt]
-2025-05-28 19:17:16.640 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
-2025-05-28 19:17:16.646 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:b4cb1769-7065-4eb3-8757-b1a5ba758565
-Error Number:207,State:1,Class:16
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:b4cb1769-7065-4eb3-8757-b1a5ba758565
-Error Number:207,State:1,Class:16
-2025-05-28 19:17:16.648 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
-2025-05-28 19:17:16.771 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
+2025-05-28 19:45:23.713 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 19:45:23.728 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
+2025-05-28 19:45:23.830 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
 Invalid column name 'ModifiedBy'.
@@ -159,172 +75,108 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:b4cb1769-7065-4eb3-8757-b1a5ba758565
+   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
-2025-05-28 19:17:16.786 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
-2025-05-28 19:17:16.798 +03:30 [INF] Saving healthchecks configuration to database
-2025-05-28 19:17:17.399 +03:30 [INF] HTTP GET /health responded 200 in 282.1236 ms
-2025-05-28 19:17:46.800 +03:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
-FROM [OutboxEvents] AS [o]
-WHERE [o].[ProcessedAt] IS NULL
-ORDER BY [o].[CreatedAt]
-2025-05-28 19:17:46.802 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+2025-05-28 19:45:23.844 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-28 19:45:24.445 +03:30 [INF] HTTP GET /health responded 200 in 318.4305 ms
+2025-05-28 19:59:27.171 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-28 19:59:27.940 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 19:59:28.011 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 19:59:28.271 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:59:28.274 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:59:28.276 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:59:28.278 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:59:28.280 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 20:00:28.593 +03:30 [ERR] خطا در مقداردهی اولیه دیتابیس
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
 --- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at LendTech.Database.SeedData.DatabaseInitializer.InitializeAsync(IServiceProvider serviceProvider) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\SeedData\DatabaseInitializer.cs:line 27
+ClientConnectionId:480448a8-7ff2-41de-82d4-23a7046b8a42
+Error Number:18456,State:1,Class:14
+2025-05-28 20:00:28.642 +03:30 [FTL] خطا در مقداردهی اولیه دیتابیس
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
 --- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-2025-05-28 19:17:46.881 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at LendTech.Database.SeedData.DatabaseInitializer.InitializeAsync(IServiceProvider serviceProvider) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\SeedData\DatabaseInitializer.cs:line 27
+   at Program.<<Main>$>g__InitializeDatabase|0_2(WebApplication app) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Program.cs:line 195
+ClientConnectionId:480448a8-7ff2-41de-82d4-23a7046b8a42
+Error Number:18456,State:1,Class:14
+2025-05-28 20:00:28.691 +03:30 [FTL] خطای بحرانی در راه‌اندازی سرویس
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
 --- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-2025-05-28 19:17:47.624 +03:30 [INF] HTTP GET /health responded 200 in 5.5962 ms
-2025-05-28 19:17:54.065 +03:30 [WRN] کاربر فاقد شناسه معتبر است
-2025-05-28 19:17:54.069 +03:30 [INF] HTTP GET /api/v1/Users responded 401 in 8.7945 ms
-2025-05-28 19:18:08.594 +03:30 [INF] شروع پردازش درخواست LoginCommand f48474cc-bb70-478d-87ed-236621910733 {"LoginRequest":{"Username":"dsfsdf","Password":"sdfsdf","OrganizationId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
-2025-05-28 19:18:08.620 +03:30 [ERR] خطا در پردازش درخواست LoginCommand f48474cc-bb70-478d-87ed-236621910733 پس از 20ms
-System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
-   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
-   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
-   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
-   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
-2025-05-28 19:18:13.930 +03:30 [ERR] خطای ناشناخته رخ داده است
-System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
-   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
-   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
-   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
-   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
-   at LendTech.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Application\Behaviors\ValidationBehavior.cs:line 25
-   at LendTech.API.Controllers.AuthController.Login(LoginRequestDto request) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.API\Controllers\AuthController.cs:line 45
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
-   at LendTech.API.Middleware.GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.API\Middleware\GlobalExceptionHandlerMiddleware.cs:line 28
-2025-05-28 19:18:13.941 +03:30 [ERR] HTTP POST /api/v1/Auth/login responded 500 in 5412.5821 ms
-2025-05-28 19:18:16.901 +03:30 [ERR] Failed executing DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
-FROM [OutboxEvents] AS [o]
-WHERE [o].[ProcessedAt] IS NULL
-ORDER BY [o].[CreatedAt]
-2025-05-28 19:18:16.903 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-2025-05-28 19:18:16.973 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:6f1ea8f5-3c76-44e1-a036-d8dca66fc34d
-Error Number:207,State:1,Class:16
-2025-05-28 19:18:17.688 +03:30 [INF] HTTP GET /health responded 200 in 27.0523 ms
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at LendTech.Database.SeedData.DatabaseInitializer.InitializeAsync(IServiceProvider serviceProvider) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\SeedData\DatabaseInitializer.cs:line 27
+   at Program.<<Main>$>g__InitializeDatabase|0_2(WebApplication app) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Program.cs:line 195
+   at Program.<Main>$(String[] args) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Program.cs:line 49
+ClientConnectionId:480448a8-7ff2-41de-82d4-23a7046b8a42
+Error Number:18456,State:1,Class:14

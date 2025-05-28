@@ -1,109 +1,109 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\",
+  "WorkspaceRootPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\logs\\lendtech-20250528_002.log||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\logs\\lendtech-20250528_002.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.backgroundtasks\\options\\cleanupoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\options\\cleanupoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.backgroundtasks\\services\\cleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\services\\cleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.backgroundtasks\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\filters\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\filters\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\logs\\lendtech-20250528.log||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\logs\\lendtech-20250528.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.database\\lendtechdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.database\\seeddata\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|solutionrelative:lendtech.database\\seeddata\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.database\\seeddata\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|solutionrelative:lendtech.database\\seeddata\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.database\\lendtechdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}|LendTech.Database\\LendTech.Database.csproj|solutionrelative:lendtech.database\\lendtechdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\versioningextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.backgroundtasks\\options\\cleanupoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\options\\cleanupoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.backgroundtasks\\services\\cleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\services\\cleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.backgroundtasks\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}|LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj|solutionrelative:lendtech.backgroundtasks\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\filters\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\filters\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\versioningextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\versioningextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.sharedkernel\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.sharedkernel\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|solutionrelative:lendtech.sharedkernel\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\policies\\policynames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\policies\\policynames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\policies\\policynames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\middleware\\securityheadersmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\middleware\\securityheadersmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\middleware\\securityheadersmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\middleware\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\middleware\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\middleware\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\ratelimitingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\ratelimitingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\ratelimitingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\healthcheckextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\healthcheckextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\healthcheckextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.sharedkernel\\exceptions\\ratelimitexceededexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.sharedkernel\\exceptions\\ratelimitexceededexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|solutionrelative:lendtech.sharedkernel\\exceptions\\ratelimitexceededexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.sharedkernel\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.sharedkernel\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD558768-DAE2-4BC1-A562-C305FCD4B36D}|LendTech.SharedKernel\\LendTech.SharedKernel.csproj|solutionrelative:lendtech.sharedkernel\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs\\cqrs\\lendtech.api\\lendtech.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|d:\\project\\fantap\\github\\cqrs1\\lendtech.api\\lendtech.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{17B5F13E-B66F-4863-88B0-E0550739FCDF}|LendTech.API\\LendTech.API.csproj|solutionrelative:lendtech.api\\lendtech.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -114,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,65 +134,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "lendtech-20250528_002.log",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\logs\\lendtech-20250528_002.log",
-              "RelativeDocumentMoniker": "LendTech.API\\logs\\lendtech-20250528_002.log",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\logs\\lendtech-20250528_002.log",
-              "RelativeToolTip": "LendTech.API\\logs\\lendtech-20250528_002.log",
-              "ViewState": "AgIAACYBAAAA0M953UwBwDABAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-28T15:48:35.961Z",
+              "DocumentIndex": 3,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\SeedData\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "LendTech.Database\\SeedData\\DatabaseInitializer.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\SeedData\\DatabaseInitializer.cs",
+              "RelativeToolTip": "LendTech.Database\\SeedData\\DatabaseInitializer.cs",
+              "ViewState": "AgIAAOwBAAAAAAAAAAAIwCYCAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T16:27:31.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\appsettings.Development.json",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "LendTech.API\\appsettings.Development.json",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\appsettings.Development.json",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\appsettings.Development.json",
               "RelativeToolTip": "LendTech.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-28T15:47:11.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CleanupService.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Services\\CleanupService.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Services\\CleanupService.cs",
               "RelativeDocumentMoniker": "LendTech.BackgroundTasks\\Services\\CleanupService.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Services\\CleanupService.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Services\\CleanupService.cs",
               "RelativeToolTip": "LendTech.BackgroundTasks\\Services\\CleanupService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAwwB4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:44:06.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:44:06.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "LendTechDbContext.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.Database\\LendTechDbContext.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\LendTechDbContext.cs",
               "RelativeDocumentMoniker": "LendTech.Database\\LendTechDbContext.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.Database\\LendTechDbContext.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\LendTechDbContext.cs",
               "RelativeToolTip": "LendTech.Database\\LendTechDbContext.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T15:34:02.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Program.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Program.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Program.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Program.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Program.cs",
               "RelativeToolTip": "LendTech.API\\Program.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAgwLUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAgwK8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T15:31:07.533Z",
               "EditorCaption": ""
@@ -201,274 +200,255 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "PolicyNames.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Policies\\PolicyNames.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Policies\\PolicyNames.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Policies\\PolicyNames.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Policies\\PolicyNames.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Policies\\PolicyNames.cs",
               "RelativeToolTip": "LendTech.API\\Policies\\PolicyNames.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:31:02.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:31:02.062Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "AuthenticationExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\AuthenticationExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\AuthenticationExtensions.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Extensions\\AuthenticationExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\AuthenticationExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\AuthenticationExtensions.cs",
               "RelativeToolTip": "LendTech.API\\Extensions\\AuthenticationExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:51.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:51.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VersioningExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\VersioningExtensions.cs",
-              "RelativeDocumentMoniker": "LendTech.API\\Extensions\\VersioningExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\VersioningExtensions.cs",
-              "RelativeToolTip": "LendTech.API\\Extensions\\VersioningExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:25:05.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\appsettings.json",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\appsettings.json",
               "RelativeDocumentMoniker": "LendTech.API\\appsettings.json",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\appsettings.json",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\appsettings.json",
               "RelativeToolTip": "LendTech.API\\appsettings.json",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEsAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-28T15:23:22.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CleanupOptions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
-              "RelativeDocumentMoniker": "LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
-              "RelativeToolTip": "LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\SeedData\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "LendTech.Database\\SeedData\\DataSeeder.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\SeedData\\DataSeeder.cs",
+              "RelativeToolTip": "LendTech.Database\\SeedData\\DataSeeder.cs",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAswMcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:44:10.095Z",
+              "WhenOpened": "2025-05-28T16:29:16.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "VersioningExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\VersioningExtensions.cs",
+              "RelativeDocumentMoniker": "LendTech.API\\Extensions\\VersioningExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\VersioningExtensions.cs",
+              "RelativeToolTip": "LendTech.API\\Extensions\\VersioningExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:42:56.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:25:05.724Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "CleanupOptions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
+              "RelativeDocumentMoniker": "LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
+              "RelativeToolTip": "LendTech.BackgroundTasks\\Options\\CleanupOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:44:10.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "LendTech.BackgroundTasks\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:42:56.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PermissionAuthorizationHandler.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
               "RelativeToolTip": "LendTech.API\\Filters\\PermissionAuthorizationHandler.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwA0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:48.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:48.853Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Models\\ApiResponse.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "LendTech.SharedKernel\\Models\\ApiResponse.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Models\\ApiResponse.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Models\\ApiResponse.cs",
               "RelativeToolTip": "LendTech.SharedKernel\\Models\\ApiResponse.cs",
               "ViewState": "AgIAALQAAAAAAAAAAAAwwKkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:25:30.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "lendtech-20250528.log",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\logs\\lendtech-20250528.log",
-              "RelativeDocumentMoniker": "LendTech.API\\logs\\lendtech-20250528.log",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\logs\\lendtech-20250528.log",
-              "RelativeToolTip": "LendTech.API\\logs\\lendtech-20250528.log",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDoAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-28T15:40:02.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:25:30.575Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Dockerfile",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Dockerfile",
               "RelativeDocumentMoniker": "LendTech.API\\Dockerfile",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Dockerfile",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Dockerfile",
               "RelativeToolTip": "LendTech.API\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-28T15:31:29.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:31:29.629Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "README.md",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\README.md",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\README.md",
               "RelativeDocumentMoniker": "LendTech.API\\README.md",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\README.md",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\README.md",
               "RelativeToolTip": "LendTech.API\\README.md",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-28T15:31:35.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:31:35.153Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "RateLimitingExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\RateLimitingExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\RateLimitingExtensions.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Extensions\\RateLimitingExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\RateLimitingExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\RateLimitingExtensions.cs",
               "RelativeToolTip": "LendTech.API\\Extensions\\RateLimitingExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:54.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:54.016Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "GlobalExceptionHandlerMiddleware.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
               "RelativeToolTip": "LendTech.API\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAcwFcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:25:23.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:25:23.027Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "SecurityHeadersMiddleware.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
               "RelativeToolTip": "LendTech.API\\Middleware\\SecurityHeadersMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:25:23.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:25:23.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "SwaggerExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\SwaggerExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\SwaggerExtensions.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Extensions\\SwaggerExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\SwaggerExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\SwaggerExtensions.cs",
               "RelativeToolTip": "LendTech.API\\Extensions\\SwaggerExtensions.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAwwFEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:54.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:54.819Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "HealthCheckExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\HealthCheckExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\HealthCheckExtensions.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Extensions\\HealthCheckExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\HealthCheckExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\HealthCheckExtensions.cs",
               "RelativeToolTip": "LendTech.API\\Extensions\\HealthCheckExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:53.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:53.205Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "CorsExtensions.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\CorsExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\CorsExtensions.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Extensions\\CorsExtensions.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Extensions\\CorsExtensions.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Extensions\\CorsExtensions.cs",
               "RelativeToolTip": "LendTech.API\\Extensions\\CorsExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:24:52.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:24:52.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "LendTech.API\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "LendTech.API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:30:12.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:30:12.301Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "RateLimitExceededException.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
               "RelativeDocumentMoniker": "LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
               "RelativeToolTip": "LendTech.SharedKernel\\Exceptions\\RateLimitExceededException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:27:37.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:27:37.956Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "BusinessException.cs",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
               "RelativeDocumentMoniker": "LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
               "RelativeToolTip": "LendTech.SharedKernel\\Exceptions\\BusinessException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T15:27:45.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:27:45.17Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "LendTech.API",
-              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\LendTech.API.csproj",
+              "Title": "LendTech.API.csproj",
+              "DocumentMoniker": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\LendTech.API.csproj",
               "RelativeDocumentMoniker": "LendTech.API\\LendTech.API.csproj",
-              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs\\Cqrs\\LendTech.API\\LendTech.API.csproj",
+              "ToolTip": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.API\\LendTech.API.csproj",
               "RelativeToolTip": "LendTech.API\\LendTech.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-28T15:23:52.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:23:52.693Z"
             }
           ]
         }

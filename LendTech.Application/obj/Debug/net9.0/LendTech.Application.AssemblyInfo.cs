@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LendTech.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f8a02b8e94a053cdbe16a08588917a0e32effa0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LendTech.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LendTech.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

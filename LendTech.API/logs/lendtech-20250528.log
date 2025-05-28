@@ -1,111 +1,27 @@
-2025-05-28 19:09:58.408 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:09:58.884 +03:30 [FTL] خطای بحرانی در راه‌اندازی سرویس
-System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationService Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.Policy.IPolicyEvaluator Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationHandler Lifetime: Singleton ImplementationType: LendTech.API.Filters.PermissionAuthorizationHandler': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.)
- ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationService Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
- ---> System.InvalidOperationException: Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
-   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
-   at Program.<Main>$(String[] args) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.API\Program.cs:line 45
- ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
- ---> System.InvalidOperationException: Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
-
- ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.Policy.IPolicyEvaluator Lifetime: Transient ImplementationType: Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
- ---> System.InvalidOperationException: Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
-
- ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Authorization.IAuthorizationHandler Lifetime: Singleton ImplementationType: LendTech.API.Filters.PermissionAuthorizationHandler': Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
- ---> System.InvalidOperationException: Cannot consume scoped service 'LendTech.Application.Services.Interfaces.IPermissionService' from singleton 'Microsoft.AspNetCore.Authorization.IAuthorizationHandler'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
-
-2025-05-28 19:12:17.962 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:13:17.182 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:14:48.457 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:15:35.855 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:16:37.191 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:16:38.094 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
-2025-05-28 19:16:38.701 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.703 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.704 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.705 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.706 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:16:38.908 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
-2025-05-28 19:16:39.244 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
-2025-05-28 19:16:39.274 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-ZqtVI5xFKzV8V0-KtwoSHA ثبت شد
-2025-05-28 19:16:39.276 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-MyOMyuyJNIWhflrNAb9WeA ثبت شد
-2025-05-28 19:16:39.278 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-HzPRltDsK4za1kMcnIsGBQ ثبت شد
-2025-05-28 19:16:39.279 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
-2025-05-28 19:16:39.280 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
-2025-05-28 19:16:39.316 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * 
-2025-05-28 19:16:39.329 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
-2025-05-28 19:16:39.457 +03:30 [INF] Initializing UI Database
-2025-05-28 19:16:39.552 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
-2025-05-28 19:16:39.560 +03:30 [ERR] Failed executing DbCommand (100ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+2025-05-28 19:45:21.650 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-28 19:45:22.824 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 19:45:23.137 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.139 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.142 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.144 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.145 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 19:45:23.262 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 19:45:23.521 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 19:45:23.529 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-JxWHbTQEk2o4NOG2pVBjMQ ثبت شد
+2025-05-28 19:45:23.557 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-JMgo9nWzleptRpUX8KQwMQ ثبت شد
+2025-05-28 19:45:23.560 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-aamqYu0lL8yQqCAvszoOEw ثبت شد
+2025-05-28 19:45:23.561 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 19:45:23.562 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 19:45:23.599 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 19:45:23.603 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 19:45:23.632 +03:30 [INF] Initializing UI Database
+2025-05-28 19:45:23.671 +03:30 [ERR] Failed executing DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
 SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
 FROM [OutboxEvents] AS [o]
 WHERE [o].[ProcessedAt] IS NULL
 ORDER BY [o].[CreatedAt]
-2025-05-28 19:16:39.561 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
-2025-05-28 19:16:39.571 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
+2025-05-28 19:45:23.672 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
+2025-05-28 19:45:23.679 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
 Invalid column name 'ModifiedBy'.
@@ -121,7 +37,7 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
@@ -138,10 +54,11 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
-2025-05-28 19:16:39.762 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
-2025-05-28 19:16:39.757 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
+2025-05-28 19:45:23.713 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 19:45:23.728 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
+2025-05-28 19:45:23.830 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
 Invalid column name 'ModifiedAt'.
 Invalid column name 'ModifiedBy'.
@@ -159,10 +76,10 @@ Invalid column name 'ModifiedBy'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:754a12f7-1404-40c2-805d-f6c0eae64986
+   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
+ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
 Error Number:207,State:1,Class:16
-2025-05-28 19:16:39.785 +03:30 [INF] Saving healthchecks configuration to database
-2025-05-28 19:16:41.341 +03:30 [INF] HTTP GET /health responded 200 in 1011.7401 ms
+2025-05-28 19:45:23.844 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-28 19:45:24.445 +03:30 [INF] HTTP GET /health responded 200 in 318.4305 ms
