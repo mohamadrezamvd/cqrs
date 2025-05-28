@@ -1,0 +1,17 @@
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.csproj.AssemblyReference.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.AssemblyInfoInputs.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.AssemblyInfo.cs
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.Infrastructure.deps.json
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.Infrastructure.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.Infrastructure.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.Database.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.SharedKernel.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.Database.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\bin\Debug\net9.0\LendTech.SharedKernel.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.10C6CDE6.Up2Date
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\refint\LendTech.Infrastructure.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\LendTech.Infrastructure.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.Infrastructure\obj\Debug\net9.0\ref\LendTech.Infrastructure.dll

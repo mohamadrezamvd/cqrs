@@ -1,0 +1,12 @@
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.csproj.AssemblyReference.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.AssemblyInfoInputs.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.AssemblyInfo.cs
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.csproj.CoreCompileInputs.cache
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\bin\Debug\net9.0\LendTech.SharedKernel.deps.json
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\bin\Debug\net9.0\LendTech.SharedKernel.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\bin\Debug\net9.0\LendTech.SharedKernel.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\refint\LendTech.SharedKernel.dll
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\LendTech.SharedKernel.pdb
+D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.SharedKernel\obj\Debug\net9.0\ref\LendTech.SharedKernel.dll

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Database", "LendTech.Database\LendTech.Database.csproj", "{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.SharedKernel", "LendTech.SharedKernel\LendTech.SharedKernel.csproj", "{BD558768-DAE2-4BC1-A562-C305FCD4B36D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Infrastructure", "LendTech.Infrastructure\LendTech.Infrastructure.csproj", "{8C327A59-5B8E-410C-BAE8-853BEE198722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Application", "LendTech.Application\LendTech.Application.csproj", "{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.BackgroundTasks", "LendTech.BackgroundTasks\LendTech.BackgroundTasks.csproj", "{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.API", "LendTech.API\LendTech.API.csproj", "{17B5F13E-B66F-4863-88B0-E0550739FCDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD558768-DAE2-4BC1-A562-C305FCD4B36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD558768-DAE2-4BC1-A562-C305FCD4B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD558768-DAE2-4BC1-A562-C305FCD4B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD558768-DAE2-4BC1-A562-C305FCD4B36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C327A59-5B8E-410C-BAE8-853BEE198722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C327A59-5B8E-410C-BAE8-853BEE198722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C327A59-5B8E-410C-BAE8-853BEE198722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C327A59-5B8E-410C-BAE8-853BEE198722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B5F13E-B66F-4863-88B0-E0550739FCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B5F13E-B66F-4863-88B0-E0550739FCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B5F13E-B66F-4863-88B0-E0550739FCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B5F13E-B66F-4863-88B0-E0550739FCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70151DDB-B9E7-4B34-BB15-FE2ED332020D}
+	EndGlobalSection
+EndGlobal
