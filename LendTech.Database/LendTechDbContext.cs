@@ -1,234 +1,274 @@
-using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
 using LendTech.Database.Entities;
-using LendTech.Database.SeedData;
-using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 namespace LendTech.Database;
-/// <summary>
-/// کانتکست اصلی دیتابیس LendTech
-/// این کلاس از طریق Scaffold-DbContext تولید می‌شود ولی می‌توانیم آن را سفارشی کنیم
-/// </summary>
+
 public partial class LendTechDbContext : DbContext
 {
-	// سرویس‌های مورد نیاز برای Auditing
-	private readonly string? _currentUserId;
-	private readonly Guid? _currentOrganizationId;
-	public LendTechDbContext(DbContextOptions<LendTechDbContext> options)
-		: base(options)
-	{
-	}
+    public LendTechDbContext()
+    {
+    }
 
-	/// <summary>
-	/// کانستراکتور برای تزریق اطلاعات کاربر جاری
-	/// </summary>
-	public LendTechDbContext(
-		DbContextOptions<LendTechDbContext> options,
-		string? currentUserId,
-		Guid? currentOrganizationId)
-		: base(options)
-	{
-		_currentUserId = currentUserId;
-		_currentOrganizationId = currentOrganizationId;
-	}
+    public LendTechDbContext(DbContextOptions<LendTechDbContext> options)
+        : base(options)
+    {
+    }
 
-	// DbSet ها برای دسترسی به جداول
-	public virtual DbSet<Organization> Organizations { get; set; } = null!;
-	public virtual DbSet<User> Users { get; set; } = null!;
-	public virtual DbSet<PermissionGroup> PermissionGroups { get; set; } = null!;
-	public virtual DbSet<Permission> Permissions { get; set; } = null!;
-	public virtual DbSet<Role> Roles { get; set; } = null!;
-	public virtual DbSet<UserRole> UserRoles { get; set; } = null!;
-	public virtual DbSet<RolePermissionGroup> RolePermissionGroups { get; set; } = null!;
-	public virtual DbSet<Currency> Currencies { get; set; } = null!;
-	public virtual DbSet<CurrencyRate> CurrencyRates { get; set; } = null!;
-	public virtual DbSet<OutboxEvent> OutboxEvents { get; set; } = null!;
-	public virtual DbSet<InboxEvent> InboxEvents { get; set; } = null!;
-	public virtual DbSet<AuditLog> AuditLogs { get; set; } = null!;
+    public virtual DbSet<AuditLog> AuditLogs { get; set; }
 
-	protected override void OnModelCreating(ModelBuilder modelBuilder)
-	{
-		base.OnModelCreating(modelBuilder);
+    public virtual DbSet<Currency> Currencies { get; set; }
 
-		// اعمال تمام Configuration ها از اسمبلی جاری
-		modelBuilder.ApplyConfigurationsFromAssembly(typeof(LendTechDbContext).Assembly);
+    public virtual DbSet<CurrencyRate> CurrencyRates { get; set; }
 
-		// اعمال Data Seed
-		DataSeeder.Seed(modelBuilder);
+    public virtual DbSet<InboxEvent> InboxEvents { get; set; }
 
-		// اعمال فیلتر Tenant برای موجودیت‌های Multi-Tenant
-		if (_currentOrganizationId.HasValue)
-		{
-			// فیلتر برای Users
-			modelBuilder.Entity<User>().HasQueryFilter(u =>
-				u.OrganizationId == _currentOrganizationId.Value && !u.IsDeleted);
+    public virtual DbSet<Organization> Organizations { get; set; }
 
-			// فیلتر برای Roles
-			modelBuilder.Entity<Role>().HasQueryFilter(r =>
-				r.OrganizationId == _currentOrganizationId.Value && !r.IsDeleted);
+    public virtual DbSet<OutboxEvent> OutboxEvents { get; set; }
 
-			// فیلتر برای OutboxEvents
-			modelBuilder.Entity<OutboxEvent>().HasQueryFilter(o =>
-				o.OrganizationId == _currentOrganizationId.Value);
+    public virtual DbSet<Permission> Permissions { get; set; }
 
-			// فیلتر برای InboxEvents
-			modelBuilder.Entity<InboxEvent>().HasQueryFilter(i =>
-				i.OrganizationId == _currentOrganizationId.Value);
+    public virtual DbSet<PermissionGroup> PermissionGroups { get; set; }
 
-			// فیلتر برای AuditLogs
-			modelBuilder.Entity<AuditLog>().HasQueryFilter(a =>
-				a.OrganizationId == _currentOrganizationId.Value);
-		}
-	}
+    public virtual DbSet<Role> Roles { get; set; }
 
-	/// <summary>
-	/// بازنویسی SaveChanges برای پیاده‌سازی Audit Trail
-	/// </summary>
-	public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-	{
-		await HandleAuditing();
-		return await base.SaveChangesAsync(cancellationToken);
-	}
+    public virtual DbSet<RolePermissionGroup> RolePermissionGroups { get; set; }
 
-	/// <summary>
-	/// بازنویسی SaveChanges برای پیاده‌سازی Audit Trail
-	/// </summary>
-	public override int SaveChanges()
-	{
-		HandleAuditing().GetAwaiter().GetResult();
-		return base.SaveChanges();
-	}
+    public virtual DbSet<User> Users { get; set; }
 
-	/// <summary>
-	/// مدیریت فیلدهای ممیزی
-	/// </summary>
-	private async Task HandleAuditing()
-	{
-		var entries = ChangeTracker.Entries()
-			.Where(e => e.State == EntityState.Added ||
-					   e.State == EntityState.Modified ||
-					   e.State == EntityState.Deleted);
+    public virtual DbSet<UserRole> UserRoles { get; set; }
 
-		var currentTime = DateTime.UtcNow;
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("data source=.;Database=LendTech;uid=mvd;pwd=123;encrypt=false");
 
-		foreach (var entry in entries)
-		{
-			// برای موجودیت‌های BaseEntity
-			if (entry.Entity is BaseEntity baseEntity)
-			{
-				switch (entry.State)
-				{
-					case EntityState.Added:
-						baseEntity.CreatedAt = currentTime;
-						baseEntity.CreatedBy = _currentUserId;
-						break;
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<AuditLog>(entity =>
+        {
+            entity.HasIndex(e => new { e.OrganizationId, e.CreatedAt }, "IX_AuditLogs_OrganizationId_CreatedAt");
 
-					case EntityState.Modified:
-						baseEntity.ModifiedAt = currentTime;
-						baseEntity.ModifiedBy = _currentUserId;
-						// جلوگیری از تغییر فیلدهای Created
-						entry.Property(nameof(BaseEntity.CreatedAt)).IsModified = false;
-						entry.Property(nameof(BaseEntity.CreatedBy)).IsModified = false;
-						break;
-				}
-			}
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Action).HasMaxLength(32);
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.EntityId).HasMaxLength(64);
+            entity.Property(e => e.EntityName).HasMaxLength(128);
+            entity.Property(e => e.IpAddress).HasMaxLength(64);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.UserAgent).HasMaxLength(256);
 
-			// برای موجودیت‌های SoftDeletable
-			if (entry.Entity is SoftDeletableEntity softDeletableEntity && entry.State == EntityState.Deleted)
-			{
-				// تبدیل حذف فیزیکی به حذف منطقی
-				entry.State = EntityState.Modified;
-				softDeletableEntity.IsDeleted = true;
-				softDeletableEntity.DeletedAt = currentTime;
-				softDeletableEntity.DeletedBy = _currentUserId;
-			}
+            entity.HasOne(d => d.Organization).WithMany(p => p.AuditLogs)
+                .HasForeignKey(d => d.OrganizationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_AuditLogs_Organizations");
 
-			// ایجاد Audit Log برای تغییرات مهم
-			if (_currentOrganizationId.HasValue && ShouldAudit(entry))
-			{
-				await CreateAuditLog(entry);
-			}
-		}
-	}
+            entity.HasOne(d => d.User).WithMany(p => p.AuditLogs)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_AuditLogs_Users");
+        });
 
-	/// <summary>
-	/// تعیین اینکه آیا این تغییر باید لاگ شود یا نه
-	/// </summary>
-	private bool ShouldAudit(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry entry)
-	{
-		// موجودیت‌هایی که نیاز به Audit دارند
-		var auditableTypes = new[]
-		{
-		typeof(User),
-		typeof(Role),
-		typeof(Permission),
-		typeof(PermissionGroup),
-		typeof(UserRole),
-		typeof(RolePermissionGroup)
-	};
+        modelBuilder.Entity<Currency>(entity =>
+        {
+            entity.HasIndex(e => e.Code, "IX_Currencies_Code").IsUnique();
 
-		return auditableTypes.Contains(entry.Entity.GetType());
-	}
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Code).HasMaxLength(8);
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DecimalPlaces).HasDefaultValue(2);
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Name).HasMaxLength(64);
+            entity.Property(e => e.Symbol).HasMaxLength(8);
+        });
 
-	/// <summary>
-	/// ایجاد لاگ ممیزی
-	/// </summary>
-	private async Task CreateAuditLog(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry entry)
-	{
-		var auditLog = new AuditLog
-		{
-			OrganizationId = _currentOrganizationId!.Value,
-			UserId = string.IsNullOrEmpty(_currentUserId) ? null : Guid.Parse(_currentUserId),
-			EntityName = entry.Entity.GetType().Name,
-			Action = entry.State.ToString(),
-			CreatedAt = DateTime.UtcNow
-		};
+        modelBuilder.Entity<CurrencyRate>(entity =>
+        {
+            entity.HasIndex(e => new { e.EffectiveDate, e.ExpiryDate }, "IX_CurrencyRates_EffectiveDate_ExpiryDate");
 
-		// تنظیم EntityId
-		if (entry.Entity is BaseEntity entity)
-		{
-			auditLog.EntityId = entity.Id.ToString();
-		}
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Rate).HasColumnType("decimal(18, 6)");
 
-		// ذخیره مقادیر قدیم و جدید به صورت JSON
-		var oldValues = new Dictionary<string, object?>();
-		var newValues = new Dictionary<string, object?>();
+            entity.HasOne(d => d.FromCurrency).WithMany(p => p.CurrencyRateFromCurrencies)
+                .HasForeignKey(d => d.FromCurrencyId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CurrencyRates_FromCurrency");
 
-		foreach (var property in entry.Properties)
-		{
-			var propertyName = property.Metadata.Name;
+            entity.HasOne(d => d.ToCurrency).WithMany(p => p.CurrencyRateToCurrencies)
+                .HasForeignKey(d => d.ToCurrencyId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CurrencyRates_ToCurrency");
+        });
 
-			// عدم لاگ کردن فیلدهای حساس
-			if (propertyName == nameof(User.PasswordHash))
-				continue;
+        modelBuilder.Entity<InboxEvent>(entity =>
+        {
+            entity.HasIndex(e => e.MessageId, "IX_InboxEvents_MessageId").IsUnique();
 
-			switch (entry.State)
-			{
-				case EntityState.Added:
-					newValues[propertyName] = property.CurrentValue;
-					break;
+            entity.HasIndex(e => e.ProcessedAt, "IX_InboxEvents_ProcessedAt");
 
-				case EntityState.Deleted:
-					oldValues[propertyName] = property.OriginalValue;
-					break;
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.EventType).HasMaxLength(64);
+            entity.Property(e => e.MessageId).HasMaxLength(128);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
 
-				case EntityState.Modified:
-					if (property.IsModified)
-					{
-						oldValues[propertyName] = property.OriginalValue;
-						newValues[propertyName] = property.CurrentValue;
-					}
-					break;
-			}
-		}
+            entity.HasOne(d => d.Organization).WithMany(p => p.InboxEvents)
+                .HasForeignKey(d => d.OrganizationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_InboxEvents_Organizations");
+        });
 
-		if (oldValues.Any())
-			auditLog.OldValues = System.Text.Json.JsonSerializer.Serialize(oldValues);
+        modelBuilder.Entity<Organization>(entity =>
+        {
+            entity.HasIndex(e => e.Code, "IX_Organizations_Code").IsUnique();
 
-		if (newValues.Any())
-			auditLog.NewValues = System.Text.Json.JsonSerializer.Serialize(newValues);
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Code).HasMaxLength(32);
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DeletedBy).HasMaxLength(64);
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Name).HasMaxLength(255);
+        });
 
-		await AuditLogs.AddAsync(auditLog);
-	}
+        modelBuilder.Entity<OutboxEvent>(entity =>
+        {
+            entity.HasIndex(e => e.ProcessedAt, "IX_OutboxEvents_ProcessedAt").HasFilter("([ProcessedAt] IS NULL)");
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.EventType).HasMaxLength(64);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+
+            entity.HasOne(d => d.Organization).WithMany(p => p.OutboxEvents)
+                .HasForeignKey(d => d.OrganizationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_OutboxEvents_Organizations");
+        });
+
+        modelBuilder.Entity<Permission>(entity =>
+        {
+            entity.HasIndex(e => e.Code, "IX_Permissions_Code").IsUnique();
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Code).HasMaxLength(64);
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DeletedBy).HasMaxLength(64);
+            entity.Property(e => e.Description).HasMaxLength(512);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Name).HasMaxLength(128);
+
+            entity.HasOne(d => d.PermissionGroup).WithMany(p => p.Permissions)
+                .HasForeignKey(d => d.PermissionGroupId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Permissions_PermissionGroups");
+        });
+
+        modelBuilder.Entity<PermissionGroup>(entity =>
+        {
+            entity.HasIndex(e => e.Name, "IX_PermissionGroups_Name").IsUnique();
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DeletedBy).HasMaxLength(64);
+            entity.Property(e => e.Description).HasMaxLength(512);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Name).HasMaxLength(128);
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.HasIndex(e => new { e.Name, e.OrganizationId }, "IX_Roles_Name_OrganizationId").IsUnique();
+
+            entity.HasIndex(e => e.OrganizationId, "IX_Roles_OrganizationId");
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DeletedBy).HasMaxLength(64);
+            entity.Property(e => e.Description).HasMaxLength(512);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.Name).HasMaxLength(128);
+
+            entity.HasOne(d => d.Organization).WithMany(p => p.Roles)
+                .HasForeignKey(d => d.OrganizationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Roles_Organizations");
+        });
+
+        modelBuilder.Entity<RolePermissionGroup>(entity =>
+        {
+            entity.HasKey(e => new { e.RoleId, e.PermissionGroupId });
+
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+
+            entity.HasOne(d => d.PermissionGroup).WithMany(p => p.RolePermissionGroups)
+                .HasForeignKey(d => d.PermissionGroupId)
+                .HasConstraintName("FK_RolePermissionGroups_PermissionGroups");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.RolePermissionGroups)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK_RolePermissionGroups_Roles");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasIndex(e => new { e.Email, e.OrganizationId }, "IX_Users_Email_OrganizationId").IsUnique();
+
+            entity.HasIndex(e => e.OrganizationId, "IX_Users_OrganizationId");
+
+            entity.HasIndex(e => new { e.Username, e.OrganizationId }, "IX_Users_Username_OrganizationId").IsUnique();
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.DeletedBy).HasMaxLength(64);
+            entity.Property(e => e.Email).HasMaxLength(128);
+            entity.Property(e => e.FirstName).HasMaxLength(64);
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+            entity.Property(e => e.LastName).HasMaxLength(64);
+            entity.Property(e => e.MobileNumber).HasMaxLength(32);
+            entity.Property(e => e.ModifiedBy).HasMaxLength(64);
+            entity.Property(e => e.PasswordHash).HasMaxLength(256);
+            entity.Property(e => e.Username).HasMaxLength(64);
+
+            entity.HasOne(d => d.Organization).WithMany(p => p.Users)
+                .HasForeignKey(d => d.OrganizationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Users_Organizations");
+        });
+
+        modelBuilder.Entity<UserRole>(entity =>
+        {
+            entity.HasKey(e => new { e.UserId, e.RoleId });
+
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+
+            entity.HasOne(d => d.Role).WithMany(p => p.UserRoles)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK_UserRoles_Roles");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_UserRoles_Users");
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

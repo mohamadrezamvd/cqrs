@@ -11,7 +11,7 @@ namespace LendTech.Infrastructure.Repositories.Interfaces;
 /// <summary>
 /// اینترفیس پایه Repository
 /// </summary>
-public interface IRepository<TEntity> where TEntity : BaseEntity
+public interface IRepository<TEntity> where TEntity : class, IEntity
 {
     /// <summary>
     /// دریافت تمام موجودیت‌ها به صورت IQueryable

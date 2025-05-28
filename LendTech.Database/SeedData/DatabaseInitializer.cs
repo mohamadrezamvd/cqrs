@@ -11,124 +11,124 @@ namespace LendTech.Database.SeedData;
 /// </summary>
 public static class DatabaseInitializer
 {
-/// <summary>
-/// مقداردهی اولیه دیتابیس و ایجاد داده‌های Seed
-/// </summary>
-public static async Task InitializeAsync(IServiceProvider serviceProvider)
-{
-using var scope = serviceProvider.CreateScope();
-var context = scope.ServiceProvider.GetRequiredService<LendTechDbContext>();
-var logger = scope.ServiceProvider.GetRequiredService<ILogger<LendTechDbContext>>();
-    try
+    /// <summary>
+    /// مقداردهی اولیه دیتابیس و ایجاد داده‌های Seed
+    /// </summary>
+    public static async Task InitializeAsync(IServiceProvider serviceProvider)
     {
-        logger.LogInformation("شروع بررسی و ایجاد دیتابیس...");
-
-        // اطمینان از ایجاد دیتابیس
-        var dbCreated = await context.Database.EnsureCreatedAsync();
-        
-        if (dbCreated)
+        using var scope = serviceProvider.CreateScope();
+        var context = scope.ServiceProvider.GetRequiredService<LendTechDbContext>();
+        var logger = scope.ServiceProvider.GetRequiredService<ILogger<LendTechDbContext>>();
+        try
         {
-            logger.LogInformation("دیتابیس جدید ایجاد شد.");
+            logger.LogInformation("شروع بررسی و ایجاد دیتابیس...");
+
+            // اطمینان از ایجاد دیتابیس
+            var dbCreated = await context.Database.EnsureCreatedAsync();
+
+            if (dbCreated)
+            {
+                logger.LogInformation("دیتابیس جدید ایجاد شد.");
+            }
+            else
+            {
+                logger.LogInformation("دیتابیس از قبل وجود دارد.");
+            }
+
+            // اجرای Migration های Pending
+            var pendingMigrations = await context.Database.GetPendingMigrationsAsync();
+            if (pendingMigrations.Any())
+            {
+                logger.LogInformation("اجرای {Count} Migration در انتظار...", pendingMigrations.Count());
+                await context.Database.MigrateAsync();
+                logger.LogInformation("Migration ها با موفقیت اجرا شدند.");
+            }
+
+            // بررسی و ایجاد داده‌های Seed
+            await SeedDataIfNeededAsync(context, logger);
+
+            logger.LogInformation("مقداردهی اولیه دیتابیس با موفقیت انجام شد.");
         }
-        else
+        catch (Exception ex)
         {
-            logger.LogInformation("دیتابیس از قبل وجود دارد.");
+            logger.LogError(ex, "خطا در مقداردهی اولیه دیتابیس");
+            throw;
         }
+    }
 
-        // اجرای Migration های Pending
-        var pendingMigrations = await context.Database.GetPendingMigrationsAsync();
-        if (pendingMigrations.Any())
+    /// <summary>
+    /// بررسی و ایجاد داده‌های Seed در صورت نیاز
+    /// </summary>
+    private static async Task SeedDataIfNeededAsync(LendTechDbContext context, ILogger logger)
+    {
+        // بررسی وجود داده‌های اولیه
+        if (await context.Organizations.AnyAsync())
         {
-            logger.LogInformation("اجرای {Count} Migration در انتظار...", pendingMigrations.Count());
-            await context.Database.MigrateAsync();
-            logger.LogInformation("Migration ها با موفقیت اجرا شدند.");
+            logger.LogInformation("داده‌های Seed قبلاً ایجاد شده‌اند.");
+            return;
         }
 
-        // بررسی و ایجاد داده‌های Seed
-        await SeedDataIfNeededAsync(context, logger);
+        logger.LogInformation("شروع ایجاد داده‌های Seed...");
 
-        logger.LogInformation("مقداردهی اولیه دیتابیس با موفقیت انجام شد.");
+        // شروع تراکنش برای اطمینان از یکپارچگی داده‌ها
+        using var transaction = await context.Database.BeginTransactionAsync();
+
+        try
+        {
+            // سازمان‌ها
+            await SeedOrganizationsAsync(context);
+            logger.LogInformation("سازمان‌ها ایجاد شدند.");
+
+            // گروه‌های دسترسی
+            await SeedPermissionGroupsAsync(context);
+            logger.LogInformation("گروه‌های دسترسی ایجاد شدند.");
+
+            // دسترسی‌ها
+            await SeedPermissionsAsync(context);
+            logger.LogInformation("دسترسی‌ها ایجاد شدند.");
+
+            // نقش‌ها
+            await SeedRolesAsync(context);
+            logger.LogInformation("نقش‌ها ایجاد شدند.");
+
+            // کاربران
+            await SeedUsersAsync(context);
+            logger.LogInformation("کاربران ایجاد شدند.");
+
+            // ارتباط کاربران و نقش‌ها
+            await SeedUserRolesAsync(context);
+            logger.LogInformation("ارتباط کاربران و نقش‌ها ایجاد شد.");
+
+            // ارتباط نقش‌ها و گروه‌های دسترسی
+            await SeedRolePermissionGroupsAsync(context);
+            logger.LogInformation("ارتباط نقش‌ها و گروه‌های دسترسی ایجاد شد.");
+
+            // ارزها
+            await SeedCurrenciesAsync(context);
+            logger.LogInformation("ارزها ایجاد شدند.");
+
+            // نرخ ارزها
+            await SeedCurrencyRatesAsync(context);
+            logger.LogInformation("نرخ ارزها ایجاد شدند.");
+
+            // Commit تراکنش
+            await transaction.CommitAsync();
+            logger.LogInformation("داده‌های Seed با موفقیت ایجاد شدند.");
+        }
+        catch (Exception)
+        {
+            await transaction.RollbackAsync();
+            throw;
+        }
     }
-    catch (Exception ex)
+
+    /// <summary>
+    /// ایجاد سازمان‌ها
+    /// </summary>
+    private static async Task SeedOrganizationsAsync(LendTechDbContext context)
     {
-        logger.LogError(ex, "خطا در مقداردهی اولیه دیتابیس");
-        throw;
-    }
-}
-
-/// <summary>
-/// بررسی و ایجاد داده‌های Seed در صورت نیاز
-/// </summary>
-private static async Task SeedDataIfNeededAsync(LendTechDbContext context, ILogger logger)
-{
-    // بررسی وجود داده‌های اولیه
-    if (await context.Organizations.AnyAsync())
-    {
-        logger.LogInformation("داده‌های Seed قبلاً ایجاد شده‌اند.");
-        return;
-    }
-
-    logger.LogInformation("شروع ایجاد داده‌های Seed...");
-
-    // شروع تراکنش برای اطمینان از یکپارچگی داده‌ها
-    using var transaction = await context.Database.BeginTransactionAsync();
-
-    try
-    {
-        // سازمان‌ها
-        await SeedOrganizationsAsync(context);
-        logger.LogInformation("سازمان‌ها ایجاد شدند.");
-
-        // گروه‌های دسترسی
-        await SeedPermissionGroupsAsync(context);
-        logger.LogInformation("گروه‌های دسترسی ایجاد شدند.");
-
-        // دسترسی‌ها
-        await SeedPermissionsAsync(context);
-        logger.LogInformation("دسترسی‌ها ایجاد شدند.");
-
-        // نقش‌ها
-        await SeedRolesAsync(context);
-        logger.LogInformation("نقش‌ها ایجاد شدند.");
-
-        // کاربران
-        await SeedUsersAsync(context);
-        logger.LogInformation("کاربران ایجاد شدند.");
-
-        // ارتباط کاربران و نقش‌ها
-        await SeedUserRolesAsync(context);
-        logger.LogInformation("ارتباط کاربران و نقش‌ها ایجاد شد.");
-
-        // ارتباط نقش‌ها و گروه‌های دسترسی
-        await SeedRolePermissionGroupsAsync(context);
-        logger.LogInformation("ارتباط نقش‌ها و گروه‌های دسترسی ایجاد شد.");
-
-        // ارزها
-        await SeedCurrenciesAsync(context);
-        logger.LogInformation("ارزها ایجاد شدند.");
-
-        // نرخ ارزها
-        await SeedCurrencyRatesAsync(context);
-        logger.LogInformation("نرخ ارزها ایجاد شدند.");
-
-        // Commit تراکنش
-        await transaction.CommitAsync();
-        logger.LogInformation("داده‌های Seed با موفقیت ایجاد شدند.");
-    }
-    catch (Exception)
-    {
-        await transaction.RollbackAsync();
-        throw;
-    }
-}
-
-/// <summary>
-/// ایجاد سازمان‌ها
-/// </summary>
-private static async Task SeedOrganizationsAsync(LendTechDbContext context)
-{
-    var organizations = new[]
-    {
+        var organizations = new[]
+        {
         new Organization
         {
             Id = DataSeeder.DefaultOrganizationId,
@@ -167,17 +167,17 @@ private static async Task SeedOrganizationsAsync(LendTechDbContext context)
         }
     };
 
-    await context.Organizations.AddRangeAsync(organizations);
-    await context.SaveChangesAsync();
-}
+        await context.Organizations.AddRangeAsync(organizations);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد گروه‌های دسترسی
-/// </summary>
-private static async Task SeedPermissionGroupsAsync(LendTechDbContext context)
-{
-    var permissionGroups = new[]
+    /// <summary>
+    /// ایجاد گروه‌های دسترسی
+    /// </summary>
+    private static async Task SeedPermissionGroupsAsync(LendTechDbContext context)
     {
+        var permissionGroups = new[]
+        {
         new PermissionGroup
         {
             Id = DataSeeder.UserManagementGroupId,
@@ -225,71 +225,71 @@ private static async Task SeedPermissionGroupsAsync(LendTechDbContext context)
         }
     };
 
-    await context.PermissionGroups.AddRangeAsync(permissionGroups);
-    await context.SaveChangesAsync();
-}
+        await context.PermissionGroups.AddRangeAsync(permissionGroups);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد دسترسی‌ها
-/// </summary>
-private static async Task SeedPermissionsAsync(LendTechDbContext context)
-{
-    var permissions = new List<Permission>();
-    
-    // دسترسی‌های مدیریت کاربران
-    permissions.AddRange(new[]
+    /// <summary>
+    /// ایجاد دسترسی‌ها
+    /// </summary>
+    private static async Task SeedPermissionsAsync(LendTechDbContext context)
     {
+        var permissions = new List<Permission>();
+
+        // دسترسی‌های مدیریت کاربران
+        permissions.AddRange(new[]
+        {
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.UserManagementGroupId, Name = "مشاهده کاربران", Code = "Users.View", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.UserManagementGroupId, Name = "ایجاد کاربر", Code = "Users.Create", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.UserManagementGroupId, Name = "ویرایش کاربر", Code = "Users.Update", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.UserManagementGroupId, Name = "حذف کاربر", Code = "Users.Delete", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.UserManagementGroupId, Name = "تغییر رمز عبور دیگران", Code = "Users.ChangeOthersPassword", CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     });
-    
-    // دسترسی‌های مدیریت نقش‌ها
-    permissions.AddRange(new[]
-    {
+
+        // دسترسی‌های مدیریت نقش‌ها
+        permissions.AddRange(new[]
+        {
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.RoleManagementGroupId, Name = "مشاهده نقش‌ها", Code = "Roles.View", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.RoleManagementGroupId, Name = "ایجاد نقش", Code = "Roles.Create", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.RoleManagementGroupId, Name = "ویرایش نقش", Code = "Roles.Update", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.RoleManagementGroupId, Name = "حذف نقش", Code = "Roles.Delete", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.RoleManagementGroupId, Name = "مدیریت دسترسی‌ها", Code = "Permissions.Manage", CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     });
-    
-    // دسترسی‌های مدیریت سازمان
-    permissions.AddRange(new[]
-    {
+
+        // دسترسی‌های مدیریت سازمان
+        permissions.AddRange(new[]
+        {
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.OrganizationManagementGroupId, Name = "مشاهده اطلاعات سازمان", Code = "Organization.View", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.OrganizationManagementGroupId, Name = "ویرایش اطلاعات سازمان", Code = "Organization.Update", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.OrganizationManagementGroupId, Name = "مدیریت تنظیمات", Code = "Organization.ManageSettings", CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     });
-    
-    // دسترسی‌های مالی
-    permissions.AddRange(new[]
-    {
+
+        // دسترسی‌های مالی
+        permissions.AddRange(new[]
+        {
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.FinancialManagementGroupId, Name = "مشاهده تسهیلات", Code = "Loans.View", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.FinancialManagementGroupId, Name = "مدیریت تسهیلات", Code = "Loans.Manage", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.FinancialManagementGroupId, Name = "تایید تسهیلات", Code = "Loans.Approve", CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     });
-    
-    // دسترسی‌های گزارشات
-    permissions.AddRange(new[]
-    {
+
+        // دسترسی‌های گزارشات
+        permissions.AddRange(new[]
+        {
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.ReportManagementGroupId, Name = "مشاهده گزارشات مالی", Code = "Financial.ViewReports", CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new Permission { Id = Guid.NewGuid(), PermissionGroupId = DataSeeder.ReportManagementGroupId, Name = "دانلود گزارشات", Code = "Reports.Download", CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     });
 
-    await context.Permissions.AddRangeAsync(permissions);
-    await context.SaveChangesAsync();
-}
+        await context.Permissions.AddRangeAsync(permissions);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد نقش‌ها
-/// </summary>
-private static async Task SeedRolesAsync(LendTechDbContext context)
-{
-    var roles = new[]
+    /// <summary>
+    /// ایجاد نقش‌ها
+    /// </summary>
+    private static async Task SeedRolesAsync(LendTechDbContext context)
     {
+        var roles = new[]
+        {
         new Role
         {
             Id = DataSeeder.SystemAdminRoleId,
@@ -332,17 +332,17 @@ private static async Task SeedRolesAsync(LendTechDbContext context)
         }
     };
 
-    await context.Roles.AddRangeAsync(roles);
-    await context.SaveChangesAsync();
-}
+        await context.Roles.AddRangeAsync(roles);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد کاربران
-/// </summary>
-private static async Task SeedUsersAsync(LendTechDbContext context)
-{
-    var users = new[]
+    /// <summary>
+    /// ایجاد کاربران
+    /// </summary>
+    private static async Task SeedUsersAsync(LendTechDbContext context)
     {
+        var users = new[]
+        {
         new User
         {
             Id = DataSeeder.SystemAdminUserId,
@@ -393,17 +393,17 @@ private static async Task SeedUsersAsync(LendTechDbContext context)
         }
     };
 
-    await context.Users.AddRangeAsync(users);
-    await context.SaveChangesAsync();
-}
+        await context.Users.AddRangeAsync(users);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد ارتباط کاربران و نقش‌ها
-/// </summary>
-private static async Task SeedUserRolesAsync(LendTechDbContext context)
-{
-    var userRoles = new[]
+    /// <summary>
+    /// ایجاد ارتباط کاربران و نقش‌ها
+    /// </summary>
+    private static async Task SeedUserRolesAsync(LendTechDbContext context)
     {
+        var userRoles = new[]
+        {
         new UserRole
         {
             UserId = DataSeeder.SystemAdminUserId,
@@ -427,17 +427,17 @@ private static async Task SeedUserRolesAsync(LendTechDbContext context)
         }
     };
 
-    await context.UserRoles.AddRangeAsync(userRoles);
-    await context.SaveChangesAsync();
-}
+        await context.UserRoles.AddRangeAsync(userRoles);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد ارتباط نقش‌ها و گروه‌های دسترسی
-/// </summary>
-private static async Task SeedRolePermissionGroupsAsync(LendTechDbContext context)
-{
-    var rolePermissionGroups = new[]
+    /// <summary>
+    /// ایجاد ارتباط نقش‌ها و گروه‌های دسترسی
+    /// </summary>
+    private static async Task SeedRolePermissionGroupsAsync(LendTechDbContext context)
     {
+        var rolePermissionGroups = new[]
+        {
         // مدیر سیستم - دسترسی کامل
         new RolePermissionGroup { RoleId = DataSeeder.SystemAdminRoleId, PermissionGroupId = DataSeeder.UserManagementGroupId, CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
         new RolePermissionGroup { RoleId = DataSeeder.SystemAdminRoleId, PermissionGroupId = DataSeeder.RoleManagementGroupId, CreatedAt = DateTime.UtcNow, CreatedBy = "System" },
@@ -454,17 +454,17 @@ private static async Task SeedRolePermissionGroupsAsync(LendTechDbContext contex
         new RolePermissionGroup { RoleId = DataSeeder.AuditorRoleId, PermissionGroupId = DataSeeder.ReportManagementGroupId, CreatedAt = DateTime.UtcNow, CreatedBy = "System" }
     };
 
-    await context.RolePermissionGroups.AddRangeAsync(rolePermissionGroups);
-    await context.SaveChangesAsync();
-}
+        await context.RolePermissionGroups.AddRangeAsync(rolePermissionGroups);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد ارزها
-/// </summary>
-private static async Task SeedCurrenciesAsync(LendTechDbContext context)
-{
-    var currencies = new[]
+    /// <summary>
+    /// ایجاد ارزها
+    /// </summary>
+    private static async Task SeedCurrenciesAsync(LendTechDbContext context)
     {
+        var currencies = new[]
+        {
         new Currency
         {
             Id = DataSeeder.IrrCurrencyId,
@@ -500,19 +500,19 @@ private static async Task SeedCurrenciesAsync(LendTechDbContext context)
         }
     };
 
-    await context.Currencies.AddRangeAsync(currencies);
-    await context.SaveChangesAsync();
-}
+        await context.Currencies.AddRangeAsync(currencies);
+        await context.SaveChangesAsync();
+    }
 
-/// <summary>
-/// ایجاد نرخ ارزها
-/// </summary>
-private static async Task SeedCurrencyRatesAsync(LendTechDbContext context)
-{
-    var effectiveDate = DateTime.UtcNow.Date;
-    
-    var currencyRates = new[]
+    /// <summary>
+    /// ایجاد نرخ ارزها
+    /// </summary>
+    private static async Task SeedCurrencyRatesAsync(LendTechDbContext context)
     {
+        var effectiveDate = DateTime.UtcNow.Date;
+
+        var currencyRates = new[]
+        {
         new CurrencyRate
         {
             Id = Guid.NewGuid(),
@@ -548,7 +548,7 @@ private static async Task SeedCurrencyRatesAsync(LendTechDbContext context)
         }
     };
 
-    await context.CurrencyRates.AddRangeAsync(currencyRates);
-    await context.SaveChangesAsync();
-}
+        await context.CurrencyRates.AddRangeAsync(currencyRates);
+        await context.SaveChangesAsync();
+    }
 }

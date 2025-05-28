@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using LendTech.Database.Entities;
+﻿using LendTech.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 namespace LendTech.Database.SeedData;
 /// <summary>

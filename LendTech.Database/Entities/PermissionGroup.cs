@@ -1,18 +1,33 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace LendTech.Database.Entities;
 
-/// <summary>
-/// موجودیت گروه دسترسی
-/// </summary>
-public class PermissionGroup : SoftDeletableEntity
+public partial class PermissionGroup
 {
+    public Guid Id { get; set; }
+
     public string Name { get; set; } = null!;
+
     public string? Description { get; set; }
+
     public bool IsSystemGroup { get; set; }
 
-    // روابط
+    public DateTime CreatedAt { get; set; }
+
+    public string? CreatedBy { get; set; }
+
+    public DateTime? ModifiedAt { get; set; }
+
+    public string? ModifiedBy { get; set; }
+
+    public bool IsDeleted { get; set; }
+
+    public DateTime? DeletedAt { get; set; }
+
+    public string? DeletedBy { get; set; }
+
     public virtual ICollection<Permission> Permissions { get; set; } = new List<Permission>();
+
     public virtual ICollection<RolePermissionGroup> RolePermissionGroups { get; set; } = new List<RolePermissionGroup>();
 }

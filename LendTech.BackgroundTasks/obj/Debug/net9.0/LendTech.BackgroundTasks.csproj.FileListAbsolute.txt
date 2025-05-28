@@ -19,6 +19,12 @@ D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\obj\Debug\net9.0\Len
 D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\obj\Debug\net9.0\refint\LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.pdb
 D:\Project\Fantap\GitHub\Cqrs\Cqrs\LendTech.BackgroundTasks\obj\Debug\net9.0\ref\LendTech.BackgroundTasks.dll
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.csproj.AssemblyReference.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.AssemblyInfoInputs.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.AssemblyInfo.cs
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.csproj.CoreCompileInputs.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.sourcelink.json
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.BackgroundTasks.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.BackgroundTasks.pdb
@@ -30,12 +36,6 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTec
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.Application.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.SharedKernel.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\LendTech.Database.pdb
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.csproj.AssemblyReference.cache
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.GeneratedMSBuildEditorConfig.editorconfig
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.AssemblyInfoInputs.cache
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.AssemblyInfo.cs
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.csproj.CoreCompileInputs.cache
-D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.sourcelink.json
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.0ECEC1DD.Up2Date
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\refint\LendTech.BackgroundTasks.dll

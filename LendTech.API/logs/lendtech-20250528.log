@@ -1,85 +1,104 @@
-2025-05-28 19:45:21.650 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
-2025-05-28 19:45:22.824 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
-2025-05-28 19:45:23.137 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:45:23.139 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:45:23.142 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:45:23.144 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:45:23.145 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
-2025-05-28 19:45:23.262 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
-2025-05-28 19:45:23.521 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
-2025-05-28 19:45:23.529 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-JxWHbTQEk2o4NOG2pVBjMQ ثبت شد
-2025-05-28 19:45:23.557 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-JMgo9nWzleptRpUX8KQwMQ ثبت شد
-2025-05-28 19:45:23.560 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-aamqYu0lL8yQqCAvszoOEw ثبت شد
-2025-05-28 19:45:23.561 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
-2025-05-28 19:45:23.562 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
-2025-05-28 19:45:23.599 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
-2025-05-28 19:45:23.603 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
-2025-05-28 19:45:23.632 +03:30 [INF] Initializing UI Database
-2025-05-28 19:45:23.671 +03:30 [ERR] Failed executing DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-SELECT TOP(@__p_0) [o].[Id], [o].[CreatedAt], [o].[CreatedBy], [o].[EventData], [o].[EventType], [o].[ModifiedAt], [o].[ModifiedBy], [o].[OrganizationId], [o].[ProcessedAt], [o].[RetryCount]
-FROM [OutboxEvents] AS [o]
-WHERE [o].[ProcessedAt] IS NULL
-ORDER BY [o].[CreatedAt]
-2025-05-28 19:45:23.672 +03:30 [INF] کش 0 سازمان به‌روزرسانی شد
-2025-05-28 19:45:23.679 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LendTech.Database.LendTechDbContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+2025-05-28 21:14:36.951 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-28 21:14:37.877 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 21:14:37.974 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 21:14:38.277 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:14:38.281 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:14:38.284 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:14:38.287 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:14:38.289 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:14:38.574 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-28 21:14:38.742 +03:30 [INF] شروع ایجاد داده‌های Seed...
+2025-05-28 21:14:38.890 +03:30 [INF] سازمان‌ها ایجاد شدند.
+2025-05-28 21:14:38.911 +03:30 [INF] گروه‌های دسترسی ایجاد شدند.
+2025-05-28 21:14:38.951 +03:30 [INF] دسترسی‌ها ایجاد شدند.
+2025-05-28 21:14:38.977 +03:30 [INF] نقش‌ها ایجاد شدند.
+2025-05-28 21:14:39.025 +03:30 [INF] کاربران ایجاد شدند.
+2025-05-28 21:14:39.043 +03:30 [INF] ارتباط کاربران و نقش‌ها ایجاد شد.
+2025-05-28 21:14:39.055 +03:30 [INF] ارتباط نقش‌ها و گروه‌های دسترسی ایجاد شد.
+2025-05-28 21:14:39.083 +03:30 [INF] ارزها ایجاد شدند.
+2025-05-28 21:14:39.111 +03:30 [INF] نرخ ارزها ایجاد شدند.
+2025-05-28 21:14:39.116 +03:30 [INF] داده‌های Seed با موفقیت ایجاد شدند.
+2025-05-28 21:14:39.117 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:14:39.120 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:14:39.586 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 21:14:39.685 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 21:14:39.723 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 21:14:39.730 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-XdtnAzIfvgw9NRNq4rmT6g ثبت شد
+2025-05-28 21:14:39.734 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-v23BGPL_Rr8L0OdYadXYgw ثبت شد
+2025-05-28 21:14:39.736 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-vZP1r4M4XYrVltDymkLKwQ ثبت شد
+2025-05-28 21:14:39.737 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 21:14:39.738 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 21:14:39.774 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 21:14:39.776 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 21:14:39.859 +03:30 [INF] Initializing UI Database
+2025-05-28 21:14:40.013 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 21:14:40.188 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-28 21:14:40.252 +03:30 [INF] کش 3 نرخ ارز به‌روزرسانی شد
+2025-05-28 21:14:40.268 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-28 21:14:41.564 +03:30 [INF] HTTP GET /health responded 200 in 832.8482 ms
+2025-05-28 21:15:11.731 +03:30 [INF] HTTP GET /health responded 200 in 37.0246 ms
+2025-05-28 21:15:41.761 +03:30 [INF] HTTP GET /health responded 200 in 2.9199 ms
+2025-05-28 21:15:48.240 +03:30 [INF] شروع پردازش درخواست LoginCommand 8cdca9bc-97d2-48e3-a60d-8ad800692fc8 {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 21:15:48.265 +03:30 [ERR] خطا در پردازش درخواست LoginCommand 8cdca9bc-97d2-48e3-a60d-8ad800692fc8 پس از 20ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
+2025-05-28 21:15:51.546 +03:30 [ERR] خطای ناشناخته رخ داده است
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
+   at LendTech.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\ValidationBehavior.cs:line 25
+   at LendTech.API.Controllers.AuthController.Login(LoginRequestDto request) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Controllers\AuthController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at LendTech.API.Middleware.GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Middleware\GlobalExceptionHandlerMiddleware.cs:line 28
+2025-05-28 21:15:51.556 +03:30 [ERR] HTTP POST /api/v1/Auth/login responded 500 in 3376.6661 ms
+2025-05-28 21:16:11.793 +03:30 [INF] HTTP GET /health responded 200 in 1.8029 ms
+2025-05-28 21:16:29.498 +03:30 [INF] شروع پردازش درخواست LoginCommand df25df1a-d4d5-48ac-87a4-b1a86e1477e3 {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"00000000-0000-0000-0000-000000000002","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 21:16:29.519 +03:30 [ERR] خطا در پردازش درخواست LoginCommand df25df1a-d4d5-48ac-87a4-b1a86e1477e3 پس از 15ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
+2025-05-28 21:16:39.158 +03:30 [ERR] خطای ناشناخته رخ داده است
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[LendTech.Application.Commands.Auth.LoginCommand,Ardalis.Result.Result`1[LendTech.Application.DTOs.Auth.LoginResponseDto]]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at LendTech.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\LoggingBehavior.cs:line 32
+   at LendTech.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\Behaviors\ValidationBehavior.cs:line 25
+   at LendTech.API.Controllers.AuthController.Login(LoginRequestDto request) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Controllers\AuthController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
-Error Number:207,State:1,Class:16
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
-Error Number:207,State:1,Class:16
-2025-05-28 19:45:23.713 +03:30 [INF] Saving healthchecks configuration to database
-2025-05-28 19:45:23.728 +03:30 [INF] کش 0 نرخ ارز به‌روزرسانی شد
-2025-05-28 19:45:23.830 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedBy'.
-Invalid column name 'ModifiedAt'.
-Invalid column name 'ModifiedBy'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at LendTech.Infrastructure.Repositories.OutboxEventRepository.GetUnprocessedEventsAsync(Int32 batchSize, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Repositories\OutboxEventRepository.cs:line 26
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 84
-   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
-ClientConnectionId:08699af4-94f2-4a6a-a6db-a858c6fb1476
-Error Number:207,State:1,Class:16
-2025-05-28 19:45:23.844 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
-2025-05-28 19:45:24.445 +03:30 [INF] HTTP GET /health responded 200 in 318.4305 ms
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at LendTech.API.Middleware.GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Middleware\GlobalExceptionHandlerMiddleware.cs:line 28
+2025-05-28 21:16:39.163 +03:30 [ERR] HTTP POST /api/v1/Auth/login responded 500 in 9673.2283 ms
+2025-05-28 21:16:41.854 +03:30 [INF] HTTP GET /health responded 200 in 3.6058 ms

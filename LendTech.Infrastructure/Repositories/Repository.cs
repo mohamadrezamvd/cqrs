@@ -14,7 +14,7 @@ namespace LendTech.Infrastructure.Repositories;
 /// <summary>
 /// پیاده‌سازی پایه Repository
 /// </summary>
-public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity
 {
     protected readonly LendTechDbContext _context;
     protected readonly DbSet<TEntity> _dbSet;
