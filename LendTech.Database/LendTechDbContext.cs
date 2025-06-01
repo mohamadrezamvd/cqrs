@@ -40,9 +40,11 @@ public partial class LendTechDbContext : DbContext
 
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
+    public virtual DbSet<UserToken> UserTokens { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("data source=.;Database=LendTech;uid=mvd;pwd=123;encrypt=false");
+        => optionsBuilder.UseSqlServer("Server=localhost;Database=LendTech;Trusted_Connection=true;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -265,6 +267,30 @@ public partial class LendTechDbContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK_UserRoles_Users");
+        });
+
+        modelBuilder.Entity<UserToken>(entity =>
+        {
+            entity.HasIndex(e => e.UserId, "IX_UserTokens_UserId");
+
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.AccessToken).HasMaxLength(256);
+            entity.Property(e => e.AccessTokenExpiresAt).HasPrecision(0);
+            entity.Property(e => e.CreatedAt)
+                .HasPrecision(0)
+                .HasDefaultValueSql("(sysutcdatetime())");
+            entity.Property(e => e.CreatedBy).HasMaxLength(64);
+            entity.Property(e => e.IpAddress).HasMaxLength(64);
+            entity.Property(e => e.RefreshToken).HasMaxLength(256);
+            entity.Property(e => e.RefreshTokenExpiresAt).HasPrecision(0);
+            entity.Property(e => e.RevokedAt).HasPrecision(0);
+            entity.Property(e => e.RevokedBy).HasMaxLength(64);
+            entity.Property(e => e.RevokedReason).HasMaxLength(256);
+            entity.Property(e => e.UserAgent).HasMaxLength(256);
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserTokens)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_UserTokens_Users");
         });
 
         OnModelCreatingPartial(modelBuilder);

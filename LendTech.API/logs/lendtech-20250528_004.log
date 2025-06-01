@@ -1,0 +1,79 @@
+2025-05-28 21:39:36.051 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 21:39:36.145 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 21:39:36.414 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:39:36.415 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:39:36.417 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:39:36.418 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:39:36.419 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:39:36.706 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-28 21:39:36.882 +03:30 [INF] داده‌های Seed قبلاً ایجاد شده‌اند.
+2025-05-28 21:39:36.883 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:39:36.885 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:39:37.157 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 21:39:37.219 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 21:39:37.270 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 21:39:37.315 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-2q4mmqoBfgJAojHfsLFfEA ثبت شد
+2025-05-28 21:39:37.316 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-RpHkwBa-w4Ne7sz6DHv2Cg ثبت شد
+2025-05-28 21:39:37.318 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-p9YnvSQ5W-Q6itieauSkwg ثبت شد
+2025-05-28 21:39:37.320 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 21:39:37.321 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 21:39:37.356 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 21:39:37.358 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 21:39:37.378 +03:30 [INF] Initializing UI Database
+2025-05-28 21:39:37.521 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 21:39:37.599 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-28 21:39:37.735 +03:30 [INF] کش 3 نرخ ارز به‌روزرسانی شد
+2025-05-28 21:39:37.753 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-28 21:39:38.080 +03:30 [INF] HTTP GET /health responded 200 in 166.2033 ms
+2025-05-28 21:40:08.197 +03:30 [INF] HTTP GET /health responded 200 in 5.8099 ms
+2025-05-28 21:40:36.607 +03:30 [INF] شروع پردازش درخواست LoginCommand 434a68a8-8181-48c2-9d9e-f2c0756e1fef {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 21:40:36.785 +03:30 [WRN] تلاش ناموفق ورود برای admin - دلیل: رمز عبور اشتباه
+2025-05-28 21:40:36.786 +03:30 [INF] پایان پردازش درخواست LoginCommand 434a68a8-8181-48c2-9d9e-f2c0756e1fef در 163ms
+2025-05-28 21:40:36.799 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 401 in 251.3251 ms
+2025-05-28 21:40:38.349 +03:30 [INF] HTTP GET /health responded 200 in 116.1053 ms
+2025-05-28 21:40:59.956 +03:30 [INF] شروع پردازش درخواست LoginCommand 31d886b8-b409-45f6-a5e1-d3629fd8c058 {"LoginRequest":{"Username":"admin","Password":"admin@123","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 21:40:59.997 +03:30 [WRN] تلاش ناموفق ورود برای admin - دلیل: رمز عبور اشتباه
+2025-05-28 21:40:59.998 +03:30 [INF] پایان پردازش درخواست LoginCommand 31d886b8-b409-45f6-a5e1-d3629fd8c058 در 18ms
+2025-05-28 21:41:00.000 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 401 in 54.9467 ms
+2025-05-28 21:41:08.377 +03:30 [INF] HTTP GET /health responded 200 in 2.1738 ms
+2025-05-28 21:42:27.644 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-28 21:42:28.233 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 21:42:28.327 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 21:42:28.612 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:42:28.614 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:42:28.616 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:42:28.617 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:42:28.619 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:42:28.918 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-28 21:42:29.086 +03:30 [INF] داده‌های Seed قبلاً ایجاد شده‌اند.
+2025-05-28 21:42:29.087 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:42:29.090 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:42:29.366 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 21:42:29.460 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 21:42:29.513 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 21:42:29.532 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-aKsWc5C5gQK8zgx4RHzXjQ ثبت شد
+2025-05-28 21:42:29.535 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-y_g-RCfHpej14Rj24eDMOg ثبت شد
+2025-05-28 21:42:29.537 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-Jasq3hP_YcBXXHaPDLJwDw ثبت شد
+2025-05-28 21:42:29.537 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 21:42:29.539 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 21:42:29.574 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 21:42:29.576 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 21:42:29.598 +03:30 [INF] Initializing UI Database
+2025-05-28 21:42:29.667 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 21:42:29.859 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-28 21:42:30.007 +03:30 [INF] کش 3 نرخ ارز به‌روزرسانی شد
+2025-05-28 21:42:30.078 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-28 21:42:30.296 +03:30 [INF] HTTP GET /health responded 200 in 161.9861 ms
+2025-05-28 21:42:40.751 +03:30 [INF] شروع پردازش درخواست LoginCommand 5989a5c3-0434-4c28-8417-d8423dbfcd4e {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 21:42:51.359 +03:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-28 21:42:52.063 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-28 21:42:55.960 +03:30 [WRN] درخواست LoginCommand 5989a5c3-0434-4c28-8417-d8423dbfcd4e بیش از 500ms طول کشید: 15142ms
+2025-05-28 21:42:55.962 +03:30 [INF] پایان پردازش درخواست LoginCommand 5989a5c3-0434-4c28-8417-d8423dbfcd4e در 15142ms
+2025-05-28 21:42:55.964 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-28 21:42:55.977 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 15285.7270 ms
+2025-05-28 21:43:00.423 +03:30 [INF] HTTP GET /health responded 200 in 3.0633 ms
+2025-05-28 21:43:30.458 +03:30 [INF] HTTP GET /health responded 200 in 1.5505 ms
+2025-05-28 21:44:00.485 +03:30 [INF] HTTP GET /health responded 200 in 1.9985 ms
+2025-05-28 21:44:30.527 +03:30 [INF] HTTP GET /health responded 200 in 5.0300 ms
+2025-05-28 21:45:00.605 +03:30 [INF] HTTP GET /health responded 200 in 56.9844 ms
+2025-05-28 21:45:30.632 +03:30 [INF] HTTP GET /health responded 200 in 1.7999 ms

@@ -19,10 +19,6 @@ Log.Logger = new LoggerConfiguration()
 .Enrich.WithEnvironmentName()
 .Enrich.WithMachineName()
 .WriteTo.Console()
-.WriteTo.File(
-"logs/lendtech-.log",
-rollingInterval: RollingInterval.Day,
-retainedFileCountLimit: 30)
 .CreateBootstrapLogger();
 try
 {
@@ -30,15 +26,18 @@ try
 	var builder = WebApplication.CreateBuilder(args);
 
 	// تنظیم Serilog
-	builder.Host.UseSerilog((context, services, configuration) => configuration
-		.ReadFrom.Configuration(context.Configuration)
-		.ReadFrom.Services(services)
-		.Enrich.FromLogContext()
-		.WriteTo.Console()
-		.WriteTo.File(
-			"logs/lendtech-.log",
-			rollingInterval: RollingInterval.Day,
-			retainedFileCountLimit: 30));
+	builder.Host.UseSerilog((context, configuration) =>
+	{
+		configuration
+			.ReadFrom.Configuration(context.Configuration)
+			.Enrich.FromLogContext()
+			.Enrich.WithMachineName()
+			.Enrich.WithEnvironmentName()
+			.WriteTo.Console()
+			.WriteTo.Seq(
+				serverUrl: builder.Configuration["Seq:ServerUrl"]!,
+				apiKey: builder.Configuration["Seq:ApiKey"]);
+	});
 
 	// افزودن سرویس‌ها
 	ConfigureServices(builder.Services, builder.Configuration);

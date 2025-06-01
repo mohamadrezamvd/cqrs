@@ -17,3 +17,4 @@ public partial class InboxEvent : IEntity { }
 public partial class Permission : IEntity { }
 public partial class PermissionGroup : IEntity { }
 public partial class User : IEntity { }
+public partial class UserToken : IEntity { }

@@ -1,0 +1,188 @@
+2025-05-30 14:40:46.433 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-30 14:40:49.578 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-30 14:40:49.855 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-30 14:40:50.176 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-30 14:40:50.178 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-30 14:40:50.179 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-30 14:40:50.181 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-30 14:40:50.182 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-30 14:40:50.645 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-30 14:40:50.812 +03:30 [INF] داده‌های Seed قبلاً ایجاد شده‌اند.
+2025-05-30 14:40:50.813 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-30 14:40:50.816 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-30 14:40:51.243 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-30 14:40:51.353 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-30 14:40:51.429 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-30 14:40:51.439 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-tKAzcSWapv1wXdqQyEIIDQ ثبت شد
+2025-05-30 14:40:51.461 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-Bj5m0Mw39JyW6WNREUWY7Q ثبت شد
+2025-05-30 14:40:51.463 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-Js0HpjotW3JlUSiM0WfMzg ثبت شد
+2025-05-30 14:40:51.464 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-30 14:40:51.465 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-30 14:40:51.501 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-30 14:40:51.503 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-31T02:00:00.0000000Z"
+2025-05-30 14:40:51.579 +03:30 [INF] Initializing UI Database
+2025-05-30 14:40:51.806 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-30 14:40:51.835 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-30 14:40:51.962 +03:30 [INF] کش 3 نرخ ارز به‌روزرسانی شد
+2025-05-30 14:40:51.982 +03:30 [INF] کش دسترسی‌های 0 کاربر فعال به‌روزرسانی شد
+2025-05-30 14:40:53.138 +03:30 [INF] HTTP GET /health responded 200 in 747.3470 ms
+2025-05-30 14:41:01.471 +03:30 [INF] HTTP GET /health-ui responded 200 in 4.2177 ms
+2025-05-30 14:41:01.489 +03:30 [INF] HTTP GET /ui/resources/healthchecksui-min.css responded 200 in 3.0811 ms
+2025-05-30 14:41:01.493 +03:30 [INF] HTTP GET /ui/resources/healthchecks-bundle.js responded 200 in 5.8767 ms
+2025-05-30 14:41:01.493 +03:30 [INF] HTTP GET /ui/resources/vendors-dll.js responded 200 in 7.6647 ms
+2025-05-30 14:41:01.535 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 4.8720 ms
+2025-05-30 14:41:01.565 +03:30 [INF] HTTP GET /favicon.ico responded 404 in 0.1831 ms
+2025-05-30 14:41:01.572 +03:30 [INF] HTTP GET /ui/resources/1ae4e3706fe3f478fcc1.woff2 responded 404 in 0.1457 ms
+2025-05-30 14:41:01.614 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 42.5945 ms
+2025-05-30 14:41:23.249 +03:30 [INF] HTTP GET /health responded 200 in 2.7113 ms
+2025-05-30 14:41:53.316 +03:30 [INF] HTTP GET /health responded 200 in 42.5833 ms
+2025-05-30 14:42:23.350 +03:30 [INF] HTTP GET /health responded 200 in 2.4484 ms
+2025-05-30 14:42:25.966 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1406 ms
+2025-05-30 14:42:25.967 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.7263 ms
+2025-05-30 14:42:39.329 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1766 ms
+2025-05-30 14:42:39.330 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.8019 ms
+2025-05-30 14:42:40.231 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1120 ms
+2025-05-30 14:42:40.231 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.6687 ms
+2025-05-30 14:42:43.082 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1653 ms
+2025-05-30 14:42:43.083 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.5954 ms
+2025-05-30 14:42:55.392 +03:30 [INF] HTTP GET /health-ui responded 200 in 0.2415 ms
+2025-05-30 14:42:55.439 +03:30 [INF] HTTP GET /ui/resources/healthchecksui-min.css responded 200 in 0.2005 ms
+2025-05-30 14:42:55.441 +03:30 [INF] HTTP GET /ui/resources/vendors-dll.js responded 200 in 2.6342 ms
+2025-05-30 14:42:55.442 +03:30 [INF] HTTP GET /ui/resources/healthchecks-bundle.js responded 200 in 3.0582 ms
+2025-05-30 14:42:55.536 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1436 ms
+2025-05-30 14:42:55.557 +03:30 [INF] HTTP GET /ui/resources/1ae4e3706fe3f478fcc1.woff2 responded 404 in 0.0933 ms
+2025-05-30 14:42:55.575 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.8002 ms
+2025-05-30 14:43:00.518 +03:30 [WRN] Health check Redis with status "Degraded" completed after 5698.5686ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 9, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=8,QueuedItems=0,CompletedItems=4621,Timers=31), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:43:00.532 +03:30 [INF] HTTP GET /health responded 200 in 5714.8664 ms
+2025-05-30 14:43:07.640 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1401 ms
+2025-05-30 14:43:07.642 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 2.0021 ms
+2025-05-30 14:43:43.722 +03:30 [WRN] Health check Redis with status "Degraded" completed after 13140.7254ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=8,QueuedItems=0,CompletedItems=5959,Timers=31), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:43:43.725 +03:30 [INF] HTTP GET /health responded 200 in 13143.3583 ms
+2025-05-30 14:43:43.732 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:44:21.882 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.2454 ms
+2025-05-30 14:44:21.883 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.9351 ms
+2025-05-30 14:44:30.898 +03:30 [WRN] Health check Redis with status "Degraded" completed after 17150.667ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=7410,Timers=29), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:44:30.902 +03:30 [INF] HTTP GET /health responded 200 in 17156.1277 ms
+2025-05-30 14:44:30.911 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:45:00.831 +03:30 [INF] شروع پردازش درخواست LoginCommand a2ec206d-13f1-4e10-9efa-bbad6eee82bf {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-30 14:45:01.030 +03:30 [WRN] تلاش ناموفق ورود برای admin - دلیل: رمز عبور اشتباه
+2025-05-30 14:45:01.032 +03:30 [INF] پایان پردازش درخواست LoginCommand a2ec206d-13f1-4e10-9efa-bbad6eee82bf در 195ms
+2025-05-30 14:45:01.045 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 401 in 276.6640 ms
+2025-05-30 14:45:09.717 +03:30 [INF] شروع پردازش درخواست LoginCommand 0f23f6f2-197d-4c98-ad13-4f524b11b414 {"LoginRequest":{"Username":"admin","Password":"123456","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-30 14:45:14.076 +03:30 [WRN] Health check Redis with status "Degraded" completed after 13147.5547ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=8797,Timers=30), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:45:14.078 +03:30 [INF] HTTP GET /health responded 200 in 13149.6435 ms
+2025-05-30 14:45:14.085 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:45:15.286 +03:30 [ERR] خطا در دریافت از کش با کلید LendTech:UserPermissions:30000000-0000-0000-0000-000000000001
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 15, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=8844,Timers=27), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.GetAsync[T](String key, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 28
+2025-05-30 14:45:15.304 +03:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-30 14:45:21.274 +03:30 [ERR] خطا در ذخیره در کش با کلید LendTech:UserPermissions:30000000-0000-0000-0000-000000000001
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 17, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=9020,Timers=27), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.SetAsync[T](String key, T value, Nullable`1 expiration, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 73
+2025-05-30 14:45:27.273 +03:30 [ERR] خطا در ذخیره رشته در کش با کلید jwt:access:30000000-0000-0000-0000-000000000001:56eff4d3-e41f-4bd2-bb03-087b9727abd7
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 19, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=32,Max=32767), POOL: (Threads=5,QueuedItems=0,CompletedItems=9201,Timers=26), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.SetStringAsync(String key, String value, Nullable`1 expiration, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 99
+2025-05-30 14:45:27.275 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-30 14:45:27.294 +03:30 [WRN] درخواست LoginCommand 0f23f6f2-197d-4c98-ad13-4f524b11b414 بیش از 500ms طول کشید: 17567ms
+2025-05-30 14:45:27.296 +03:30 [INF] پایان پردازش درخواست LoginCommand 0f23f6f2-197d-4c98-ad13-4f524b11b414 در 17567ms
+2025-05-30 14:45:27.298 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-30 14:45:27.302 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 17592.5788 ms
+2025-05-30 14:45:57.235 +03:30 [WRN] Health check Redis with status "Degraded" completed after 13132.0045ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=10137,Timers=31), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:45:57.237 +03:30 [INF] HTTP GET /health responded 200 in 13134.1710 ms
+2025-05-30 14:45:57.268 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:46:38.765 +03:30 [INF] شروع پردازش درخواست LoginCommand 904d28eb-06b2-4525-acff-73255a27cc89 {"LoginRequest":{"Username":"admin","Password":"123456","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-30 14:46:42.431 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1249 ms
+2025-05-30 14:46:42.432 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.5576 ms
+2025-05-30 14:46:44.292 +03:30 [ERR] خطا در دریافت از کش با کلید LendTech:UserPermissions:30000000-0000-0000-0000-000000000001
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 20, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=32,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=11597,Timers=30), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.GetAsync[T](String key, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 28
+2025-05-30 14:46:44.473 +03:30 [WRN] Health check Redis with status "Degraded" completed after 17170.063ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=11616,Timers=30), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:46:44.475 +03:30 [INF] HTTP GET /health responded 200 in 17172.1677 ms
+2025-05-30 14:46:44.484 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:46:50.288 +03:30 [ERR] خطا در ذخیره در کش با کلید LendTech:UserPermissions:30000000-0000-0000-0000-000000000001
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 22, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=32,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=11785,Timers=24), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.SetAsync[T](String key, T value, Nullable`1 expiration, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 73
+2025-05-30 14:46:56.262 +03:30 [ERR] خطا در ذخیره رشته در کش با کلید jwt:access:30000000-0000-0000-0000-000000000001:16579d79-7626-46f5-8200-529afc2ac51c
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 2, async-ops: 24, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=11974,Timers=26), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at LendTech.Infrastructure.Redis.CacheService.SetStringAsync(String key, String value, Nullable`1 expiration, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Redis\CacheService.cs:line 99
+2025-05-30 14:46:56.263 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-30 14:46:56.266 +03:30 [WRN] درخواست LoginCommand 904d28eb-06b2-4525-acff-73255a27cc89 بیش از 500ms طول کشید: 17495ms
+2025-05-30 14:46:56.267 +03:30 [INF] پایان پردازش درخواست LoginCommand 904d28eb-06b2-4525-acff-73255a27cc89 در 17495ms
+2025-05-30 14:46:56.267 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-30 14:46:56.268 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 17511.7227 ms
+2025-05-30 14:46:56.443 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1206 ms
+2025-05-30 14:46:56.443 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.6794 ms
+2025-05-30 14:46:57.424 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1021 ms
+2025-05-30 14:46:57.425 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.4548 ms
+2025-05-30 14:47:31.719 +03:30 [WRN] Health check Redis with status "Degraded" completed after 17214.5296ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-J2K1G8L(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=32,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=13099,Timers=30), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-05-30 14:47:31.732 +03:30 [INF] HTTP GET /health responded 200 in 17227.5753 ms
+2025-05-30 14:47:31.745 +03:30 [INF] Notification is sent on same window time.
+2025-05-30 14:47:56.872 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1033 ms
+2025-05-30 14:47:56.873 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.8570 ms
+2025-05-30 14:48:01.782 +03:30 [INF] HTTP GET /health responded 200 in 7.0547 ms
+2025-05-30 14:48:07.823 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 1.6140 ms
+2025-05-30 14:48:07.823 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.0718 ms
+2025-05-30 14:48:17.976 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1575 ms
+2025-05-30 14:48:17.976 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.7178 ms
+2025-05-30 14:48:19.945 +03:30 [INF] شروع پردازش درخواست LoginCommand 20cc8ea6-ac2d-49fb-8baa-40248b2bc92b {"LoginRequest":{"Username":"admin","Password":"123456","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-30 14:48:19.961 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-30 14:48:19.962 +03:30 [INF] پایان پردازش درخواست LoginCommand 20cc8ea6-ac2d-49fb-8baa-40248b2bc92b در 13ms
+2025-05-30 14:48:19.963 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-30 14:48:19.964 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 46.6585 ms
+2025-05-30 14:48:31.808 +03:30 [INF] HTTP GET /health responded 200 in 2.1231 ms
+2025-05-30 14:49:01.865 +03:30 [INF] HTTP GET /health responded 200 in 36.0637 ms
+2025-05-30 14:49:27.263 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1378 ms
+2025-05-30 14:49:27.305 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 42.5922 ms
+2025-05-30 14:49:31.939 +03:30 [INF] HTTP GET /health responded 200 in 38.7622 ms
+2025-05-30 14:50:01.970 +03:30 [INF] HTTP GET /health responded 200 in 4.4281 ms
+2025-05-30 14:50:32.007 +03:30 [INF] HTTP GET /health responded 200 in 5.0124 ms

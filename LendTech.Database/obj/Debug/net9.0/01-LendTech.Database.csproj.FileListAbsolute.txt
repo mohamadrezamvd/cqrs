@@ -1,0 +1,15 @@
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.deps.json
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.runtimeconfig.json
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.dll
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.pdb
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.csproj.AssemblyReference.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.AssemblyInfoInputs.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.AssemblyInfo.cs
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.csproj.CoreCompileInputs.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.sourcelink.json
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.dll
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\refint\01-LendTech.Database.dll
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.pdb
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.genruntimeconfig.cache
+D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\ref\01-LendTech.Database.dll
