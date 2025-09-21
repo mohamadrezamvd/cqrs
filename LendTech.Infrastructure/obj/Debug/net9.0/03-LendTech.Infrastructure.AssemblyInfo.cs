@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("03-LendTech.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+900de20eb73a5ee03c7770912b984c966e56cd6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14fb9d4675222ef7e705c984f78aba845413f0ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("03-LendTech.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("03-LendTech.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
