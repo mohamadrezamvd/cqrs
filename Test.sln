@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Database", "LendTech.Database\LendTech.Database.csproj", "{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-LendTech.Database", "LendTech.Database\01-LendTech.Database.csproj", "{11F6CC1F-5054-4FDA-AEEA-5F3C9505D429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.SharedKernel", "LendTech.SharedKernel\LendTech.SharedKernel.csproj", "{BD558768-DAE2-4BC1-A562-C305FCD4B36D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-LendTech.SharedKernel", "LendTech.SharedKernel\02-LendTech.SharedKernel.csproj", "{BD558768-DAE2-4BC1-A562-C305FCD4B36D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Infrastructure", "LendTech.Infrastructure\LendTech.Infrastructure.csproj", "{8C327A59-5B8E-410C-BAE8-853BEE198722}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-LendTech.Infrastructure", "LendTech.Infrastructure\03-LendTech.Infrastructure.csproj", "{8C327A59-5B8E-410C-BAE8-853BEE198722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.Application", "LendTech.Application\LendTech.Application.csproj", "{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-LendTech.Application", "LendTech.Application\04-LendTech.Application.csproj", "{FE2F0F3E-22F6-4EF7-93CE-B14695973AC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.BackgroundTasks", "LendTech.BackgroundTasks\LendTech.BackgroundTasks.csproj", "{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-LendTech.BackgroundTasks", "LendTech.BackgroundTasks\05-LendTech.BackgroundTasks.csproj", "{A2F4B3D9-080C-47A6-9A72-4AE6F43425D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendTech.API", "LendTech.API\LendTech.API.csproj", "{17B5F13E-B66F-4863-88B0-E0550739FCDF}"
 EndProject

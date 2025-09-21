@@ -1751,47 +1751,41 @@
           }
         }
       },
-      "LendTech.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Ardalis.Result": "7.2.0",
-          "AutoMapper": "13.0.1",
-          "FluentValidation": "11.9.0",
-          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
-          "LendTech.Database": "1.0.0",
-          "LendTech.Infrastructure": "1.0.0",
-          "LendTech.SharedKernel": "1.0.0",
-          "MediatR": "12.2.0",
-          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
-        },
-        "compile": {
-          "bin/placeholder/LendTech.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LendTech.Application.dll": {}
-        }
-      },
-      "LendTech.Database/1.0.0": {
+      "01-LendTech.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "compile": {
-          "bin/placeholder/LendTech.Database.dll": {}
+          "bin/placeholder/01-LendTech.Database.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LendTech.Database.dll": {}
+          "bin/placeholder/01-LendTech.Database.dll": {}
         }
       },
-      "LendTech.Infrastructure/1.0.0": {
+      "02-LendTech.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "LendTech.Database": "1.0.0",
-          "LendTech.SharedKernel": "1.0.0",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "9.0.5",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "System.Text.Json": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/02-LendTech.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/02-LendTech.SharedKernel.dll": {}
+        }
+      },
+      "03-LendTech.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "01-LendTech.Database": "1.0.0",
+          "02-LendTech.SharedKernel": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.5",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "9.0.0",
@@ -1802,26 +1796,32 @@
           "System.IdentityModel.Tokens.Jwt": "8.11.0"
         },
         "compile": {
-          "bin/placeholder/LendTech.Infrastructure.dll": {}
+          "bin/placeholder/03-LendTech.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LendTech.Infrastructure.dll": {}
+          "bin/placeholder/03-LendTech.Infrastructure.dll": {}
         }
       },
-      "LendTech.SharedKernel/1.0.0": {
+      "04-LendTech.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "9.0.5",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
-          "System.Text.Json": "9.0.0"
+          "01-LendTech.Database": "1.0.0",
+          "02-LendTech.SharedKernel": "1.0.0",
+          "03-LendTech.Infrastructure": "1.0.0",
+          "Ardalis.Result": "7.2.0",
+          "AutoMapper": "13.0.1",
+          "FluentValidation": "11.9.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "MediatR": "12.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
         },
         "compile": {
-          "bin/placeholder/LendTech.SharedKernel.dll": {}
+          "bin/placeholder/04-LendTech.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LendTech.SharedKernel.dll": {}
+          "bin/placeholder/04-LendTech.Application.dll": {}
         }
       }
     }
@@ -4374,32 +4374,32 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "LendTech.Application/1.0.0": {
+    "01-LendTech.Database/1.0.0": {
       "type": "project",
-      "path": "../LendTech.Application/LendTech.Application.csproj",
-      "msbuildProject": "../LendTech.Application/LendTech.Application.csproj"
+      "path": "../LendTech.Database/01-LendTech.Database.csproj",
+      "msbuildProject": "../LendTech.Database/01-LendTech.Database.csproj"
     },
-    "LendTech.Database/1.0.0": {
+    "02-LendTech.SharedKernel/1.0.0": {
       "type": "project",
-      "path": "../LendTech.Database/LendTech.Database.csproj",
-      "msbuildProject": "../LendTech.Database/LendTech.Database.csproj"
+      "path": "../LendTech.SharedKernel/02-LendTech.SharedKernel.csproj",
+      "msbuildProject": "../LendTech.SharedKernel/02-LendTech.SharedKernel.csproj"
     },
-    "LendTech.Infrastructure/1.0.0": {
+    "03-LendTech.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../LendTech.Infrastructure/LendTech.Infrastructure.csproj",
-      "msbuildProject": "../LendTech.Infrastructure/LendTech.Infrastructure.csproj"
+      "path": "../LendTech.Infrastructure/03-LendTech.Infrastructure.csproj",
+      "msbuildProject": "../LendTech.Infrastructure/03-LendTech.Infrastructure.csproj"
     },
-    "LendTech.SharedKernel/1.0.0": {
+    "04-LendTech.Application/1.0.0": {
       "type": "project",
-      "path": "../LendTech.SharedKernel/LendTech.SharedKernel.csproj",
-      "msbuildProject": "../LendTech.SharedKernel/LendTech.SharedKernel.csproj"
+      "path": "../LendTech.Application/04-LendTech.Application.csproj",
+      "msbuildProject": "../LendTech.Application/04-LendTech.Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LendTech.Application >= 1.0.0",
-      "LendTech.Infrastructure >= 1.0.0",
-      "LendTech.SharedKernel >= 1.0.0",
+      "02-LendTech.SharedKernel >= 1.0.0",
+      "03-LendTech.Infrastructure >= 1.0.0",
+      "04-LendTech.Application >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 9.0.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 9.0.0",
       "NCrontab >= 3.3.3",
@@ -4408,25 +4408,25 @@
   },
   "packageFolders": {
     "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
+    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj",
-      "projectName": "LendTech.BackgroundTasks",
-      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\LendTech.BackgroundTasks.csproj",
+      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
+      "projectName": "05-LendTech.BackgroundTasks",
+      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
       "packagesPath": "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\obj\\",
+      "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Mohamadrezamvd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4434,23 +4434,24 @@
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\MahanNugets\\Nugets": {},
+        "D:\\LocalNuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Application\\LendTech.Application.csproj": {
-              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Application\\LendTech.Application.csproj"
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj"
             },
-            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\LendTech.Infrastructure.csproj": {
-              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\LendTech.Infrastructure.csproj"
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj"
             },
-            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\LendTech.SharedKernel.csproj": {
-              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\LendTech.SharedKernel.csproj"
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj"
             }
           }
         }
@@ -4465,7 +4466,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -4504,7 +4505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

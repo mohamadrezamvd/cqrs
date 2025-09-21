@@ -307,25 +307,25 @@
   },
   "packageFolders": {
     "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
+    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\LendTech.SharedKernel.csproj",
-      "projectName": "LendTech.SharedKernel",
-      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\LendTech.SharedKernel.csproj",
+      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+      "projectName": "02-LendTech.SharedKernel",
+      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
       "packagesPath": "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\obj\\",
+      "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Mohamadrezamvd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -333,9 +333,10 @@
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\MahanNugets\\Nugets": {},
+        "D:\\LocalNuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -354,7 +355,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -393,7 +394,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

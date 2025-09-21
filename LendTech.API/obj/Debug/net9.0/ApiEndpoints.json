@@ -304,7 +304,7 @@
       },
       {
         "Name": "request",
-        "Type": "LendTech.API.Controllers.ChangePasswordDto",
+        "Type": "LendTech.Application.DTOs.User.ChangePasswordDto",
         "IsRequired": true
       }
     ],

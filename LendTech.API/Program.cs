@@ -19,10 +19,6 @@ Log.Logger = new LoggerConfiguration()
 .Enrich.WithEnvironmentName()
 .Enrich.WithMachineName()
 .WriteTo.Console()
-.WriteTo.File(
-"logs/lendtech-.log",
-rollingInterval: RollingInterval.Day,
-retainedFileCountLimit: 30)
 .CreateBootstrapLogger();
 try
 {
@@ -33,12 +29,7 @@ try
 	builder.Host.UseSerilog((context, services, configuration) => configuration
 		.ReadFrom.Configuration(context.Configuration)
 		.ReadFrom.Services(services)
-		.Enrich.FromLogContext()
-		.WriteTo.Console()
-		.WriteTo.File(
-			"logs/lendtech-.log",
-			rollingInterval: RollingInterval.Day,
-			retainedFileCountLimit: 30));
+		.Enrich.FromLogContext());
 
 	// افزودن سرویس‌ها
 	ConfigureServices(builder.Services, builder.Configuration);

@@ -1,0 +1,85 @@
+2025-05-28 22:10:32.816 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 22:10:32.918 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 22:10:33.271 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 22:10:33.272 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 22:10:33.274 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 22:10:33.275 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 22:10:33.276 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 22:10:33.697 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-28 22:10:33.874 +03:30 [INF] داده‌های Seed قبلاً ایجاد شده‌اند.
+2025-05-28 22:10:33.875 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 22:10:33.877 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 22:10:34.196 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 22:10:34.318 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 22:10:34.403 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 22:10:34.411 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-p2PFfhuZBgkJs0QBrArsaw ثبت شد
+2025-05-28 22:10:34.414 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag-gJQgHI3KuSx02w4Cm8tVqA ثبت شد
+2025-05-28 22:10:34.416 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-ykm5vrPEhKOGPoSGVl828A ثبت شد
+2025-05-28 22:10:34.418 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 22:10:34.419 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 22:10:34.455 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 22:10:34.457 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 22:10:34.481 +03:30 [INF] Initializing UI Database
+2025-05-28 22:10:34.550 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 22:10:34.710 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-28 22:10:34.954 +03:30 [INF] کش 3 نرخ ارز به‌روزرسانی شد
+2025-05-28 22:10:35.134 +03:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-28 22:10:35.464 +03:30 [INF] HTTP GET /health responded 200 in 308.2199 ms
+2025-05-28 22:10:35.534 +03:30 [INF] کش دسترسی‌های 1 کاربر فعال به‌روزرسانی شد
+2025-05-28 22:10:58.708 +03:30 [INF] شروع پردازش درخواست LoginCommand 7580a8f4-9d7d-4f46-b512-a51ec9f5e7eb {"LoginRequest":{"Username":"admin","Password":"Admin@123","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 22:11:05.991 +03:30 [INF] HTTP GET /health responded 200 in 4.3281 ms
+2025-05-28 22:11:06.065 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-28 22:11:06.110 +03:30 [WRN] درخواست LoginCommand 7580a8f4-9d7d-4f46-b512-a51ec9f5e7eb بیش از 500ms طول کشید: 7394ms
+2025-05-28 22:11:06.112 +03:30 [INF] پایان پردازش درخواست LoginCommand 7580a8f4-9d7d-4f46-b512-a51ec9f5e7eb در 7394ms
+2025-05-28 22:11:06.113 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-28 22:11:06.125 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 7476.2684 ms
+2025-05-28 22:11:20.130 +03:30 [INF] شروع پردازش درخواست GetUsersListQuery f2bd4b90-0f37-4265-a6bf-5f51c52df9e2 {"OrganizationId":"00000000-0000-0000-0000-000000000001","PagedRequest":{"PageNumber":1,"PageSize":10,"SortBy":null,"IsDescending":false,"SearchTerm":null,"Filters":null,"$type":"PagedRequestDto"},"$type":"GetUsersListQuery"}
+2025-05-28 22:11:20.239 +03:30 [INF] پایان پردازش درخواست GetUsersListQuery f2bd4b90-0f37-4265-a6bf-5f51c52df9e2 در 104ms
+2025-05-28 22:11:20.244 +03:30 [INF] HTTP GET /api/v1/Users responded 200 in 173.3896 ms
+2025-05-28 22:11:26.845 +03:30 [INF] شروع پردازش درخواست GetUsersListQuery abf361f2-1fc3-4e2e-b69b-ee7d60000c57 {"OrganizationId":"00000000-0000-0000-0000-000000000001","PagedRequest":{"PageNumber":1,"PageSize":10,"SortBy":null,"IsDescending":false,"SearchTerm":null,"Filters":null,"$type":"PagedRequestDto"},"$type":"GetUsersListQuery"}
+2025-05-28 22:11:26.853 +03:30 [INF] پایان پردازش درخواست GetUsersListQuery abf361f2-1fc3-4e2e-b69b-ee7d60000c57 در 3ms
+2025-05-28 22:11:26.855 +03:30 [INF] HTTP GET /api/v1/Users responded 200 in 23.7027 ms
+2025-05-28 22:11:36.034 +03:30 [INF] HTTP GET /health responded 200 in 2.0332 ms
+2025-05-28 22:12:06.062 +03:30 [INF] HTTP GET /health responded 200 in 1.8046 ms
+2025-05-28 22:12:08.416 +03:30 [INF] شروع پردازش درخواست ChangePasswordCommand 1560f5d3-f0b9-4938-bade-0a4c8c334f4b {"ChangeRequest":{"NewPassword":"123456","ConfirmPassword":"123456","$type":"ChangePasswordDto"},"UserId":"30000000-0000-0000-0000-000000000001","ModifiedBy":"30000000-0000-0000-0000-000000000001","$type":"ChangePasswordCommand"}
+2025-05-28 22:12:08.478 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" رمز عبور خود را تغییر داد
+2025-05-28 22:12:08.479 +03:30 [INF] پایان پردازش درخواست ChangePasswordCommand 1560f5d3-f0b9-4938-bade-0a4c8c334f4b در 31ms
+2025-05-28 22:12:08.482 +03:30 [INF] HTTP POST /api/v1/Users/30000000-0000-0000-0000-000000000001/change-password responded 200 in 81.2647 ms
+2025-05-28 22:12:36.102 +03:30 [INF] HTTP GET /health responded 200 in 10.3673 ms
+2025-05-28 22:13:06.176 +03:30 [INF] HTTP GET /health responded 200 in 56.7651 ms
+2025-05-28 22:13:36.197 +03:30 [INF] HTTP GET /health responded 200 in 1.7566 ms
+2025-05-28 22:13:46.438 +03:30 [INF] HTTP GET /health responded 200 in 1.9912 ms
+2025-05-28 22:13:46.485 +03:30 [INF] HTTP GET /favicon.ico responded 404 in 0.1512 ms
+2025-05-28 22:13:50.080 +03:30 [INF] HTTP GET /health-ui responded 200 in 1.2090 ms
+2025-05-28 22:13:50.165 +03:30 [INF] HTTP GET /ui/resources/healthchecksui-min.css responded 200 in 72.1742 ms
+2025-05-28 22:13:50.168 +03:30 [INF] HTTP GET /ui/resources/healthchecks-bundle.js responded 200 in 75.5188 ms
+2025-05-28 22:13:50.169 +03:30 [INF] HTTP GET /ui/resources/vendors-dll.js responded 200 in 76.6034 ms
+2025-05-28 22:13:50.210 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 2.5691 ms
+2025-05-28 22:13:50.214 +03:30 [INF] HTTP GET /favicon.ico responded 404 in 0.0936 ms
+2025-05-28 22:13:50.222 +03:30 [INF] HTTP GET /ui/resources/1ae4e3706fe3f478fcc1.woff2 responded 404 in 0.0802 ms
+2025-05-28 22:13:50.243 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 22.1725 ms
+2025-05-28 22:14:06.225 +03:30 [INF] HTTP GET /health responded 200 in 1.5428 ms
+2025-05-28 22:14:36.251 +03:30 [INF] HTTP GET /health responded 200 in 1.7328 ms
+2025-05-28 22:15:06.273 +03:30 [INF] HTTP GET /health responded 200 in 1.9063 ms
+2025-05-28 22:15:36.300 +03:30 [INF] HTTP GET /health responded 200 in 1.6994 ms
+2025-05-28 22:15:48.692 +03:30 [INF] HTTP GET /healthchecks-api/ui-settings responded 200 in 0.1942 ms
+2025-05-28 22:15:48.693 +03:30 [INF] HTTP GET /healthchecks-api responded 200 in 0.7350 ms
+2025-05-28 22:16:06.324 +03:30 [INF] HTTP GET /health responded 200 in 3.0132 ms
+2025-05-28 22:16:08.669 +03:30 [INF] شروع پردازش درخواست LoginCommand 8b3206e5-45ba-41eb-88a4-0bee42b213b9 {"LoginRequest":{"Username":"admin","Password":"123456","OrganizationId":"00000000-0000-0000-0000-000000000001","RememberMe":true,"$type":"LoginRequestDto"},"IpAddress":"127.0.0.1","UserAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0","$type":"LoginCommand"}
+2025-05-28 22:16:10.624 +03:30 [INF] توکن دسترسی برای کاربر "30000000-0000-0000-0000-000000000001" تولید شد
+2025-05-28 22:16:10.629 +03:30 [WRN] درخواست LoginCommand 8b3206e5-45ba-41eb-88a4-0bee42b213b9 بیش از 500ms طول کشید: 1954ms
+2025-05-28 22:16:10.630 +03:30 [INF] پایان پردازش درخواست LoginCommand 8b3206e5-45ba-41eb-88a4-0bee42b213b9 در 1954ms
+2025-05-28 22:16:10.631 +03:30 [INF] کاربر "30000000-0000-0000-0000-000000000001" با موفقیت وارد شد
+2025-05-28 22:16:10.632 +03:30 [INF] HTTP POST /api/v1/Auth/login responded 200 in 1975.1531 ms
+2025-05-28 22:16:36.406 +03:30 [INF] HTTP GET /health responded 200 in 21.4369 ms
+2025-05-28 22:17:06.431 +03:30 [INF] HTTP GET /health responded 200 in 1.8392 ms
+2025-05-28 22:17:36.512 +03:30 [INF] HTTP GET /health responded 200 in 56.1740 ms
+2025-05-28 22:18:06.565 +03:30 [INF] HTTP GET /health responded 200 in 1.7101 ms
+2025-05-28 22:18:36.604 +03:30 [INF] HTTP GET /health responded 200 in 9.9428 ms
+2025-05-28 22:19:06.651 +03:30 [INF] HTTP GET /health responded 200 in 1.6502 ms
+2025-05-28 22:19:36.712 +03:30 [INF] HTTP GET /health responded 200 in 1.7097 ms
+2025-05-28 22:20:06.753 +03:30 [INF] HTTP GET /health responded 200 in 26.9494 ms
+2025-05-28 22:20:36.779 +03:30 [INF] HTTP GET /health responded 200 in 1.5997 ms
+2025-05-28 22:21:06.801 +03:30 [INF] HTTP GET /health responded 200 in 1.7684 ms
+2025-05-28 22:21:36.852 +03:30 [INF] HTTP GET /health responded 200 in 31.0306 ms
+2025-05-28 22:22:06.898 +03:30 [INF] HTTP GET /health responded 200 in 2.3096 ms

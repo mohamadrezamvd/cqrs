@@ -101,3 +101,119 @@ System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2
    at LendTech.API.Middleware.GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Middleware\GlobalExceptionHandlerMiddleware.cs:line 28
 2025-05-28 21:16:39.163 +03:30 [ERR] HTTP POST /api/v1/Auth/login responded 500 in 9673.2283 ms
 2025-05-28 21:16:41.854 +03:30 [INF] HTTP GET /health responded 200 in 3.6058 ms
+2025-05-28 21:36:07.887 +03:30 [INF] شروع راه‌اندازی سرویس LendTech API
+2025-05-28 21:36:08.643 +03:30 [INF] شروع مقداردهی اولیه دیتابیس...
+2025-05-28 21:36:08.727 +03:30 [INF] شروع بررسی و ایجاد دیتابیس...
+2025-05-28 21:36:08.996 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'AuditLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:36:08.997 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'InboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:36:08.998 +03:30 [WRN] Entity 'Organization' has a global query filter defined and is the required end of a relationship with the entity 'OutboxEvent'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:36:08.999 +03:30 [WRN] Entity 'PermissionGroup' has a global query filter defined and is the required end of a relationship with the entity 'RolePermissionGroup'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:36:09.000 +03:30 [WRN] Entity 'Role' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-05-28 21:36:09.274 +03:30 [INF] دیتابیس از قبل وجود دارد.
+2025-05-28 21:36:09.437 +03:30 [INF] داده‌های Seed قبلاً ایجاد شده‌اند.
+2025-05-28 21:36:09.438 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:36:09.440 +03:30 [INF] مقداردهی اولیه دیتابیس با موفقیت انجام شد.
+2025-05-28 21:36:09.721 +03:30 [INF] سرویس Outbox Dispatcher شروع به کار کرد
+2025-05-28 21:36:09.776 +03:30 [INF] Exchange ها و Queue های RabbitMQ ایجاد شدند
+2025-05-28 21:36:09.827 +03:30 [INF] سرویس Inbox Processor شروع به کار کرد
+2025-05-28 21:36:09.832 +03:30 [INF] Consumer برای صف lendtech.user.events با تگ amq.ctag-RcBEtHPF70HGpZpd5vBCYw ثبت شد
+2025-05-28 21:36:09.834 +03:30 [INF] Consumer برای صف lendtech.organization.events با تگ amq.ctag--h6KpbbIeJHyYUDj0WYEeA ثبت شد
+2025-05-28 21:36:09.836 +03:30 [INF] Consumer برای صف lendtech.financial.events با تگ amq.ctag-h0viUJ5JJH992pyjmyeEOA ثبت شد
+2025-05-28 21:36:09.837 +03:30 [INF] Consumer ها برای صف‌های پیام ثبت شدند
+2025-05-28 21:36:09.838 +03:30 [INF] سرویس Cache Refresh شروع به کار کرد
+2025-05-28 21:36:09.875 +03:30 [INF] سرویس Cleanup شروع به کار کرد با زمان‌بندی: 0 2 * * *
+2025-05-28 21:36:09.877 +03:30 [INF] اجرای بعدی Cleanup در: "2025-05-29T02:00:00.0000000Z"
+2025-05-28 21:36:09.924 +03:30 [INF] Initializing UI Database
+2025-05-28 21:36:09.996 +03:30 [INF] Saving healthchecks configuration to database
+2025-05-28 21:36:10.168 +03:30 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider' while attempting to activate 'Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-05-28 21:36:10.173 +03:30 [INF] کش 2 سازمان به‌روزرسانی شد
+2025-05-28 21:36:10.174 +03:30 [ERR] Hosting failed to start
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider' while attempting to activate 'Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-05-28 21:36:26.256 +03:30 [ERR] خطای غیرمنتظره در Outbox Dispatcher
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'IServiceProvider'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ThrowHelper.ThrowObjectDisposedException()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateScope(IServiceProvider provider)
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ProcessOutboxEvents(CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 79
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 54
+2025-05-28 21:36:26.259 +03:30 [ERR] An error occurred using the connection to database 'LendTech' on server '.'.
+2025-05-28 21:36:26.169 +03:30 [ERR] BackgroundService failed
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.CleanupService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\CleanupService.cs:line 47
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:27.812 +03:30 [ERR] BackgroundService failed
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.InboxProcessorService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\InboxProcessorService.cs:line 44
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:27.851 +03:30 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.InboxProcessorService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\InboxProcessorService.cs:line 44
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:29.040 +03:30 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.CleanupService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\CleanupService.cs:line 47
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:29.038 +03:30 [ERR] BackgroundService failed
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:29.087 +03:30 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at LendTech.BackgroundTasks.Services.OutboxDispatcherService.ExecuteAsync(CancellationToken stoppingToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\OutboxDispatcherService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-05-28 21:36:29.085 +03:30 [ERR] خطا در به‌روزرسانی کش نرخ ارز
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LendTech.Infrastructure.Repositories.CurrencyRepository.GetRateAsync(Guid fromCurrencyId, Guid toCurrencyId, Nullable`1 date, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Repositories\CurrencyRepository.cs:line 60
+   at LendTech.Infrastructure.Repositories.CurrencyRepository.GetRateByCodeAsync(String fromCode, String toCode, Nullable`1 date, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\Repositories\CurrencyRepository.cs:line 78
+   at LendTech.BackgroundTasks.Services.CacheRefreshService.RefreshCurrencyRateCaches(IServiceProvider serviceProvider, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\CacheRefreshService.cs:line 160
+2025-05-28 21:36:29.148 +03:30 [FTL] خطای بحرانی در راه‌اندازی سرویس
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider' while attempting to activate 'Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.API\Program.cs:line 54
+2025-05-28 21:36:29.181 +03:30 [ERR] خطا در به‌روزرسانی کش دسترسی‌های کاربران
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'IServiceProvider'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ThrowHelper.ThrowObjectDisposedException()
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at LendTech.BackgroundTasks.Services.CacheRefreshService.RefreshActiveUserPermissionsCaches(IServiceProvider serviceProvider, CancellationToken cancellationToken) in D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\Services\CacheRefreshService.cs:line 199
