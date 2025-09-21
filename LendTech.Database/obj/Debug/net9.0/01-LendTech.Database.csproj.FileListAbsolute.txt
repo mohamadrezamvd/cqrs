@@ -13,6 +13,7 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\refint\01-Lend
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.genruntimeconfig.cache
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Database\obj\Debug\net9.0\ref\01-LendTech.Database.dll
+<<<<<<< HEAD
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.runtimeconfig.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\bin\Debug\net9.0\01-LendTech.Database.dll
@@ -28,3 +29,5 @@ D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\obj\Debug\net9.0\refint\0
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.pdb
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\obj\Debug\net9.0\01-LendTech.Database.genruntimeconfig.cache
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Database\obj\Debug\net9.0\ref\01-LendTech.Database.dll
+=======
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932

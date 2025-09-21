@@ -4414,9 +4414,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
       "projectName": "05-LendTech.BackgroundTasks",
       "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
+=======
+      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
+      "projectName": "05-LendTech.BackgroundTasks",
+      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.BackgroundTasks\\05-LendTech.BackgroundTasks.csproj",
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
       "packagesPath": "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.BackgroundTasks\\obj\\",
       "projectStyle": "PackageReference",
@@ -4444,6 +4450,7 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj": {
               "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj"
             },
@@ -4452,6 +4459,16 @@
             },
             "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj": {
               "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj"
+=======
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Application\\04-LendTech.Application.csproj"
+            },
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj"
+            },
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj"
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
             }
           }
         }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "C2T6KjNjpaY=",
   "success": true,
   "projectFilePath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+=======
+  "dgSpecHash": "G/yL1bLoGhA=",
+  "success": true,
+  "projectFilePath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
   "expectedPackageFiles": [
     "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.5\\microsoft.aspnetcore.cryptography.internal.9.0.5.nupkg.sha512",
     "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.5\\microsoft.aspnetcore.cryptography.keyderivation.9.0.5.nupkg.sha512",

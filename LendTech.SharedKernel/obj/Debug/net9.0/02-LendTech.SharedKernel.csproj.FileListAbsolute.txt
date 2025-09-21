@@ -11,6 +11,7 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\02-LendTec
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\refint\02-LendTech.SharedKernel.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\02-LendTech.SharedKernel.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\ref\02-LendTech.SharedKernel.dll
+<<<<<<< HEAD
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\bin\Debug\net9.0\02-LendTech.SharedKernel.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\bin\Debug\net9.0\02-LendTech.SharedKernel.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\bin\Debug\net9.0\02-LendTech.SharedKernel.pdb
@@ -24,3 +25,5 @@ D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\02-L
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\refint\02-LendTech.SharedKernel.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\02-LendTech.SharedKernel.pdb
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.SharedKernel\obj\Debug\net9.0\ref\02-LendTech.SharedKernel.dll
+=======
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932

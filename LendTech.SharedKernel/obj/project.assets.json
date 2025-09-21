@@ -313,9 +313,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
       "projectName": "02-LendTech.SharedKernel",
       "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+=======
+      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+      "projectName": "02-LendTech.SharedKernel",
+      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj",
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
       "packagesPath": "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\obj\\",
       "projectStyle": "PackageReference",

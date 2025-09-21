@@ -9,13 +9,13 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "LendTech.Application.DTOs.Auth.LoginRequestDto",
+        "Type": "LendTech.Application.Commands.Auth.LoginCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.LoginResponseDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.LoginResponseDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
@@ -65,11 +65,18 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.UserInfoDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.UserInfoDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "LendTech.SharedKernel.Models.ApiResponse",
+        "MediaTypes": [
+          "application/json; version=1.0"
+        ],
+        "StatusCode": 401
       }
     ]
   },
@@ -89,7 +96,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.LoginResponseDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.Auth.LoginResponseDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
@@ -145,7 +152,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.SharedKernel.Models.PagedResult\u00601[[LendTech.Application.DTOs.User.UserListDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], LendTech.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.SharedKernel.Models.PagedResult\u00601[[LendTech.Application.DTOs.User.UserListDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], 02-LendTech.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
@@ -169,7 +176,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
@@ -200,7 +207,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],
@@ -236,7 +243,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "LendTech.SharedKernel.Models.ApiResponse\u00601[[LendTech.Application.DTOs.User.UserDto, 04-LendTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json; version=1.0"
         ],

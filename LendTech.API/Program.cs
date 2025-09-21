@@ -26,10 +26,25 @@ try
 	var builder = WebApplication.CreateBuilder(args);
 
 	// تنظیم Serilog
+<<<<<<< HEAD
 	builder.Host.UseSerilog((context, services, configuration) => configuration
 		.ReadFrom.Configuration(context.Configuration)
 		.ReadFrom.Services(services)
 		.Enrich.FromLogContext());
+=======
+	builder.Host.UseSerilog((context, configuration) =>
+	{
+		configuration
+			.ReadFrom.Configuration(context.Configuration)
+			.Enrich.FromLogContext()
+			.Enrich.WithMachineName()
+			.Enrich.WithEnvironmentName()
+			.WriteTo.Console()
+			.WriteTo.Seq(
+				serverUrl: builder.Configuration["Seq:ServerUrl"]!,
+				apiKey: builder.Configuration["Seq:ApiKey"]);
+	});
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
 
 	// افزودن سرویس‌ها
 	ConfigureServices(builder.Services, builder.Configuration);

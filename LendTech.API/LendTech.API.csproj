@@ -28,10 +28,18 @@
 	  <PackageReference Include="AspNetCore.HealthChecks.UI" Version="9.0.0" />
 	  <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
 	  <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="9.0.0" />
+<<<<<<< HEAD
 	  <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
 	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
 	  <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
 	  <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+=======
+      <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+	  <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
+	  <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
+	  <PackageReference Include="Serilog.Sinks.Seq" Version="6.0.0" />
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
 	  <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.12.0-beta.1" />
 	  <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.5.1" />
 	  <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.12.0" />

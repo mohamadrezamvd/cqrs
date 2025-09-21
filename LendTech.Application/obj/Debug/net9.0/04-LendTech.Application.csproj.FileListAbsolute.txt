@@ -18,6 +18,7 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\obj\Debug\net9.0\04-LendTech
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\obj\Debug\net9.0\refint\04-LendTech.Application.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\obj\Debug\net9.0\04-LendTech.Application.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Application\obj\Debug\net9.0\ref\04-LendTech.Application.dll
+<<<<<<< HEAD
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\bin\Debug\net9.0\04-LendTech.Application.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\bin\Debug\net9.0\04-LendTech.Application.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\bin\Debug\net9.0\04-LendTech.Application.pdb
@@ -38,3 +39,5 @@ D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\obj\Debug\net9.0\04-Le
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\obj\Debug\net9.0\refint\04-LendTech.Application.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\obj\Debug\net9.0\04-LendTech.Application.pdb
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Application\obj\Debug\net9.0\ref\04-LendTech.Application.dll
+=======
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932

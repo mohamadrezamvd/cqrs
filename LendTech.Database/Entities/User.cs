@@ -48,4 +48,6 @@ public partial class User
     public virtual Organization Organization { get; set; } = null!;
 
     public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+
+    public virtual ICollection<UserToken> UserTokens { get; set; } = new List<UserToken>();
 }

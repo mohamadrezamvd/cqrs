@@ -3314,9 +3314,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj",
       "projectName": "03-LendTech.Infrastructure",
       "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj",
+=======
+      "projectUniqueName": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj",
+      "projectName": "03-LendTech.Infrastructure",
+      "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Infrastructure\\03-LendTech.Infrastructure.csproj",
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
       "packagesPath": "C:\\Users\\Mohamadrezamvd\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -3344,11 +3350,19 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Database\\01-LendTech.Database.csproj": {
               "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.Database\\01-LendTech.Database.csproj"
             },
             "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj": {
               "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj"
+=======
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\01-LendTech.Database.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.Database\\01-LendTech.Database.csproj"
+            },
+            "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj": {
+              "projectPath": "D:\\Project\\Fantap\\GitHub\\Cqrs1\\LendTech.SharedKernel\\02-LendTech.SharedKernel.csproj"
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
             }
           }
         }

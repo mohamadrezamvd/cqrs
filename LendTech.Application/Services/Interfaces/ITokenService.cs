@@ -32,4 +32,9 @@ Task<UserInfoDto?> GetUserInfoFromTokenAsync(string token);
 /// ابطال توکن
 /// </summary>
 Task RevokeTokenAsync(string token);
+
+/// <summary>
+/// تازه‌سازی توکن
+/// </summary>
+Task<(string AccessToken, string RefreshToken)?> RefreshTokenAsync(string refreshToken);
 }

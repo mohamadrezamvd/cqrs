@@ -20,6 +20,7 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\05-Lend
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\refint\05-LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\05-LendTech.BackgroundTasks.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\ref\05-LendTech.BackgroundTasks.dll
+<<<<<<< HEAD
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\05-LendTech.BackgroundTasks.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\05-LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\bin\Debug\net9.0\05-LendTech.BackgroundTasks.pdb
@@ -42,3 +43,5 @@ D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\0
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\refint\05-LendTech.BackgroundTasks.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\05-LendTech.BackgroundTasks.pdb
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.BackgroundTasks\obj\Debug\net9.0\ref\05-LendTech.BackgroundTasks.dll
+=======
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932

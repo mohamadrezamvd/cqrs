@@ -16,6 +16,7 @@ D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\03-LendT
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\refint\03-LendTech.Infrastructure.dll
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\03-LendTech.Infrastructure.pdb
 D:\Project\Fantap\GitHub\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\ref\03-LendTech.Infrastructure.dll
+<<<<<<< HEAD
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\bin\Debug\net9.0\03-LendTech.Infrastructure.deps.json
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\bin\Debug\net9.0\03-LendTech.Infrastructure.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\bin\Debug\net9.0\03-LendTech.Infrastructure.pdb
@@ -34,3 +35,5 @@ D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\03
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\refint\03-LendTech.Infrastructure.dll
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\03-LendTech.Infrastructure.pdb
 D:\Project\Fantap\GitHub\Cqrs1\Cqrs1\LendTech.Infrastructure\obj\Debug\net9.0\ref\03-LendTech.Infrastructure.dll
+=======
+>>>>>>> 94aac394eddb4eac9d4131a1722b51b996524932
